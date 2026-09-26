@@ -1,0 +1,185 @@
+{
+  "status": "FROZEN OFFLINE PARTITION; NO MODEL EXECUTION AUTHORIZED",
+  "selection_rule": "Four untouched diagnostic user tasks per suite by SHA-256 rank. One diagnostic injection task from the suite's most common untouched class, with alphabetical class ties and SHA-256 ID rank. All other untouched IDs reserved for test. Class stratification preserves scarce strict-sequence goals in the test.",
+  "salt": "Paper1-direct-memory-v2-2026-09-23",
+  "source": "results/exploratory/retained_feasibility_audit.json",
+  "source_sha256": "cf108abdbf95035eed0b787a08f761cbb303feb7fd3a2385d3d6418d86f912f2",
+  "taxonomy_sha256": "94ac69fc391d06b36c2567bf9ee41020163c523818fecea1e238a7984a6c15c2",
+  "extension_sha256": "d598dc05ab8f35e79a3148cf70c0a745e403c807d277346bb114255b7e48f48b",
+  "attack_vector": "important_instructions",
+  "suites": [
+    {
+      "suite": "workspace",
+      "diagnostic_user_task_ids": [
+        "user_task_10",
+        "user_task_22",
+        "user_task_29",
+        "user_task_38"
+      ],
+      "diagnostic_injection_task_ids": [
+        "injection_task_3"
+      ],
+      "diagnostic_injection_classes": {
+        "enabling_then_terminal": 1
+      },
+      "retained_test_user_task_ids": [
+        "user_task_0",
+        "user_task_1",
+        "user_task_11",
+        "user_task_13",
+        "user_task_14",
+        "user_task_15",
+        "user_task_16",
+        "user_task_17",
+        "user_task_18",
+        "user_task_23",
+        "user_task_24",
+        "user_task_26",
+        "user_task_27",
+        "user_task_28",
+        "user_task_3",
+        "user_task_30",
+        "user_task_31",
+        "user_task_32",
+        "user_task_33",
+        "user_task_35",
+        "user_task_36",
+        "user_task_37",
+        "user_task_6",
+        "user_task_7",
+        "user_task_9"
+      ],
+      "retained_test_injection_task_ids": [
+        "injection_task_14",
+        "injection_task_15",
+        "injection_task_2",
+        "injection_task_4",
+        "injection_task_5"
+      ],
+      "retained_test_injection_classes": {
+        "strict_sequence": 2,
+        "atomic_terminal": 1,
+        "enabling_then_terminal": 2
+      },
+      "diagnostic_attack_cases": 4,
+      "retained_test_attack_cases": 125
+    },
+    {
+      "suite": "travel",
+      "diagnostic_user_task_ids": [
+        "user_task_17",
+        "user_task_18",
+        "user_task_19",
+        "user_task_9"
+      ],
+      "diagnostic_injection_task_ids": [
+        "injection_task_0"
+      ],
+      "diagnostic_injection_classes": {
+        "atomic_terminal": 1
+      },
+      "retained_test_user_task_ids": [
+        "user_task_0",
+        "user_task_10",
+        "user_task_12",
+        "user_task_14",
+        "user_task_3",
+        "user_task_6",
+        "user_task_7",
+        "user_task_8"
+      ],
+      "retained_test_injection_task_ids": [
+        "injection_task_2",
+        "injection_task_3",
+        "injection_task_4"
+      ],
+      "retained_test_injection_classes": {
+        "atomic_terminal": 1,
+        "enabling_then_terminal": 2
+      },
+      "diagnostic_attack_cases": 4,
+      "retained_test_attack_cases": 24
+    },
+    {
+      "suite": "banking",
+      "diagnostic_user_task_ids": [
+        "user_task_10",
+        "user_task_14",
+        "user_task_4",
+        "user_task_8"
+      ],
+      "diagnostic_injection_task_ids": [
+        "injection_task_7"
+      ],
+      "diagnostic_injection_classes": {
+        "atomic_terminal": 1
+      },
+      "retained_test_user_task_ids": [
+        "user_task_1",
+        "user_task_12",
+        "user_task_13",
+        "user_task_3",
+        "user_task_7"
+      ],
+      "retained_test_injection_task_ids": [
+        "injection_task_0",
+        "injection_task_1",
+        "injection_task_2",
+        "injection_task_3",
+        "injection_task_6",
+        "injection_task_8"
+      ],
+      "retained_test_injection_classes": {
+        "atomic_terminal": 4,
+        "strict_sequence": 1,
+        "enabling_then_terminal": 1
+      },
+      "diagnostic_attack_cases": 4,
+      "retained_test_attack_cases": 30
+    },
+    {
+      "suite": "slack",
+      "diagnostic_user_task_ids": [
+        "user_task_15",
+        "user_task_3",
+        "user_task_8",
+        "user_task_9"
+      ],
+      "diagnostic_injection_task_ids": [
+        "injection_task_4"
+      ],
+      "diagnostic_injection_classes": {
+        "enabling_then_terminal": 1
+      },
+      "retained_test_user_task_ids": [
+        "user_task_1",
+        "user_task_10",
+        "user_task_12",
+        "user_task_13",
+        "user_task_14",
+        "user_task_16",
+        "user_task_5",
+        "user_task_6"
+      ],
+      "retained_test_injection_task_ids": [
+        "injection_task_2",
+        "injection_task_7"
+      ],
+      "retained_test_injection_classes": {
+        "enabling_then_terminal": 1,
+        "strict_sequence": 1
+      },
+      "diagnostic_attack_cases": 4,
+      "retained_test_attack_cases": 16
+    }
+  ],
+  "totals": {
+    "diagnostic_benign_user_tasks": 16,
+    "diagnostic_attack_cases": 16,
+    "retained_test_benign_user_tasks": 46,
+    "retained_test_attack_cases": 195,
+    "diagnostic_no_defense_trajectories": 32,
+    "retained_test_three_arm_trajectories": 723
+  },
+  "exclusion_warning": "Diagnostic user tasks and injection goals are both excluded from the final test. Crossed cases share IDs and are not independent observations."
+}

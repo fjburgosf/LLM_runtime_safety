@@ -1,0 +1,2 @@
+-e ./benchmarks/agentdojo
+openai==3.14.0

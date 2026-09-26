@@ -1,0 +1,3552 @@
+{
+  "status": "OFFLINE_PREFLIGHT_ONLY_NOT_EXECUTION_AUTHORIZATION",
+  "manifest_sha256": "0bf4fd82d5c5099fcfb3117d54cc90822c8050aee9dafb56af8e996c000daaa1",
+  "cost_plan_sha256": "d08dbf69cbd95a4f1cf9537b2e3e641dafbbeb092d3d091df805499f8c924f76",
+  "batch_size_cases": 10,
+  "stages": {
+    "retained_benign": {
+      "cases": 46,
+      "jobs": 138,
+      "suite_case_counts": {
+        "workspace": 25,
+        "travel": 8,
+        "banking": 5,
+        "slack": 8
+      },
+      "batches": [
+        {
+          "batch_index": 0,
+          "stage": "retained_benign",
+          "first_case_index": 0,
+          "last_case_index": 9,
+          "cases": 10,
+          "jobs": 30,
+          "suite_counts": {
+            "workspace": 7,
+            "travel": 2,
+            "banking": 1
+          },
+          "case_keys": [
+            "workspace/user_task_33/none",
+            "workspace/user_task_32/none",
+            "workspace/user_task_26/none",
+            "travel/user_task_8/none",
+            "workspace/user_task_37/none",
+            "workspace/user_task_27/none",
+            "workspace/user_task_28/none",
+            "travel/user_task_3/none",
+            "workspace/user_task_16/none",
+            "banking/user_task_3/none"
+          ]
+        },
+        {
+          "batch_index": 1,
+          "stage": "retained_benign",
+          "first_case_index": 10,
+          "last_case_index": 19,
+          "cases": 10,
+          "jobs": 30,
+          "suite_counts": {
+            "slack": 2,
+            "travel": 2,
+            "workspace": 4,
+            "banking": 2
+          },
+          "case_keys": [
+            "slack/user_task_14/none",
+            "travel/user_task_12/none",
+            "workspace/user_task_17/none",
+            "workspace/user_task_18/none",
+            "workspace/user_task_9/none",
+            "travel/user_task_0/none",
+            "workspace/user_task_23/none",
+            "slack/user_task_10/none",
+            "banking/user_task_1/none",
+            "banking/user_task_13/none"
+          ]
+        },
+        {
+          "batch_index": 2,
+          "stage": "retained_benign",
+          "first_case_index": 20,
+          "last_case_index": 29,
+          "cases": 10,
+          "jobs": 30,
+          "suite_counts": {
+            "travel": 3,
+            "workspace": 5,
+            "slack": 1,
+            "banking": 1
+          },
+          "case_keys": [
+            "travel/user_task_7/none",
+            "workspace/user_task_31/none",
+            "slack/user_task_1/none",
+            "travel/user_task_10/none",
+            "travel/user_task_6/none",
+            "workspace/user_task_14/none",
+            "workspace/user_task_15/none",
+            "workspace/user_task_24/none",
+            "workspace/user_task_36/none",
+            "banking/user_task_7/none"
+          ]
+        },
+        {
+          "batch_index": 3,
+          "stage": "retained_benign",
+          "first_case_index": 30,
+          "last_case_index": 39,
+          "cases": 10,
+          "jobs": 30,
+          "suite_counts": {
+            "workspace": 6,
+            "travel": 1,
+            "banking": 1,
+            "slack": 2
+          },
+          "case_keys": [
+            "workspace/user_task_35/none",
+            "workspace/user_task_0/none",
+            "workspace/user_task_13/none",
+            "workspace/user_task_6/none",
+            "travel/user_task_14/none",
+            "banking/user_task_12/none",
+            "workspace/user_task_3/none",
+            "slack/user_task_5/none",
+            "slack/user_task_6/none",
+            "workspace/user_task_30/none"
+          ]
+        },
+        {
+          "batch_index": 4,
+          "stage": "retained_benign",
+          "first_case_index": 40,
+          "last_case_index": 45,
+          "cases": 6,
+          "jobs": 18,
+          "suite_counts": {
+            "workspace": 3,
+            "slack": 3
+          },
+          "case_keys": [
+            "workspace/user_task_1/none",
+            "slack/user_task_16/none",
+            "slack/user_task_13/none",
+            "workspace/user_task_11/none",
+            "slack/user_task_12/none",
+            "workspace/user_task_7/none"
+          ]
+        }
+      ],
+      "case_schedule": [
+        {
+          "case_index": 0,
+          "suite": "workspace",
+          "user_task_id": "user_task_33",
+          "injection_task_id": null,
+          "random_seed": 1221505848,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 1,
+          "suite": "workspace",
+          "user_task_id": "user_task_32",
+          "injection_task_id": null,
+          "random_seed": 160721813,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 2,
+          "suite": "workspace",
+          "user_task_id": "user_task_26",
+          "injection_task_id": null,
+          "random_seed": 165622649,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 3,
+          "suite": "travel",
+          "user_task_id": "user_task_8",
+          "injection_task_id": null,
+          "random_seed": 1040045898,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 4,
+          "suite": "workspace",
+          "user_task_id": "user_task_37",
+          "injection_task_id": null,
+          "random_seed": 1465547623,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 5,
+          "suite": "workspace",
+          "user_task_id": "user_task_27",
+          "injection_task_id": null,
+          "random_seed": 386115552,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 6,
+          "suite": "workspace",
+          "user_task_id": "user_task_28",
+          "injection_task_id": null,
+          "random_seed": 2120230178,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 7,
+          "suite": "travel",
+          "user_task_id": "user_task_3",
+          "injection_task_id": null,
+          "random_seed": 1263110819,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 8,
+          "suite": "workspace",
+          "user_task_id": "user_task_16",
+          "injection_task_id": null,
+          "random_seed": 1474595004,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 9,
+          "suite": "banking",
+          "user_task_id": "user_task_3",
+          "injection_task_id": null,
+          "random_seed": 1713491949,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 10,
+          "suite": "slack",
+          "user_task_id": "user_task_14",
+          "injection_task_id": null,
+          "random_seed": 879900563,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 11,
+          "suite": "travel",
+          "user_task_id": "user_task_12",
+          "injection_task_id": null,
+          "random_seed": 2113496861,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 12,
+          "suite": "workspace",
+          "user_task_id": "user_task_17",
+          "injection_task_id": null,
+          "random_seed": 787047095,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 13,
+          "suite": "workspace",
+          "user_task_id": "user_task_18",
+          "injection_task_id": null,
+          "random_seed": 1559533645,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 14,
+          "suite": "workspace",
+          "user_task_id": "user_task_9",
+          "injection_task_id": null,
+          "random_seed": 1971170306,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 15,
+          "suite": "travel",
+          "user_task_id": "user_task_0",
+          "injection_task_id": null,
+          "random_seed": 870212546,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 16,
+          "suite": "workspace",
+          "user_task_id": "user_task_23",
+          "injection_task_id": null,
+          "random_seed": 1426743636,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 17,
+          "suite": "slack",
+          "user_task_id": "user_task_10",
+          "injection_task_id": null,
+          "random_seed": 294895287,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 18,
+          "suite": "banking",
+          "user_task_id": "user_task_1",
+          "injection_task_id": null,
+          "random_seed": 1393486493,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 19,
+          "suite": "banking",
+          "user_task_id": "user_task_13",
+          "injection_task_id": null,
+          "random_seed": 268849267,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 20,
+          "suite": "travel",
+          "user_task_id": "user_task_7",
+          "injection_task_id": null,
+          "random_seed": 2063622139,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 21,
+          "suite": "workspace",
+          "user_task_id": "user_task_31",
+          "injection_task_id": null,
+          "random_seed": 174489625,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 22,
+          "suite": "slack",
+          "user_task_id": "user_task_1",
+          "injection_task_id": null,
+          "random_seed": 308408049,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 23,
+          "suite": "travel",
+          "user_task_id": "user_task_10",
+          "injection_task_id": null,
+          "random_seed": 874378266,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 24,
+          "suite": "travel",
+          "user_task_id": "user_task_6",
+          "injection_task_id": null,
+          "random_seed": 425046141,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 25,
+          "suite": "workspace",
+          "user_task_id": "user_task_14",
+          "injection_task_id": null,
+          "random_seed": 49571350,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 26,
+          "suite": "workspace",
+          "user_task_id": "user_task_15",
+          "injection_task_id": null,
+          "random_seed": 73182216,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 27,
+          "suite": "workspace",
+          "user_task_id": "user_task_24",
+          "injection_task_id": null,
+          "random_seed": 1931478445,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 28,
+          "suite": "workspace",
+          "user_task_id": "user_task_36",
+          "injection_task_id": null,
+          "random_seed": 2087551688,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 29,
+          "suite": "banking",
+          "user_task_id": "user_task_7",
+          "injection_task_id": null,
+          "random_seed": 534578753,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 30,
+          "suite": "workspace",
+          "user_task_id": "user_task_35",
+          "injection_task_id": null,
+          "random_seed": 578088552,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 31,
+          "suite": "workspace",
+          "user_task_id": "user_task_0",
+          "injection_task_id": null,
+          "random_seed": 227644746,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 32,
+          "suite": "workspace",
+          "user_task_id": "user_task_13",
+          "injection_task_id": null,
+          "random_seed": 1405882283,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 33,
+          "suite": "workspace",
+          "user_task_id": "user_task_6",
+          "injection_task_id": null,
+          "random_seed": 1319268607,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 34,
+          "suite": "travel",
+          "user_task_id": "user_task_14",
+          "injection_task_id": null,
+          "random_seed": 35707085,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 35,
+          "suite": "banking",
+          "user_task_id": "user_task_12",
+          "injection_task_id": null,
+          "random_seed": 915723856,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 36,
+          "suite": "workspace",
+          "user_task_id": "user_task_3",
+          "injection_task_id": null,
+          "random_seed": 2049739034,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 37,
+          "suite": "slack",
+          "user_task_id": "user_task_5",
+          "injection_task_id": null,
+          "random_seed": 1993354844,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 38,
+          "suite": "slack",
+          "user_task_id": "user_task_6",
+          "injection_task_id": null,
+          "random_seed": 1743770665,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 39,
+          "suite": "workspace",
+          "user_task_id": "user_task_30",
+          "injection_task_id": null,
+          "random_seed": 1596471887,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 40,
+          "suite": "workspace",
+          "user_task_id": "user_task_1",
+          "injection_task_id": null,
+          "random_seed": 1645461849,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 41,
+          "suite": "slack",
+          "user_task_id": "user_task_16",
+          "injection_task_id": null,
+          "random_seed": 1211204257,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 42,
+          "suite": "slack",
+          "user_task_id": "user_task_13",
+          "injection_task_id": null,
+          "random_seed": 230069988,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 43,
+          "suite": "workspace",
+          "user_task_id": "user_task_11",
+          "injection_task_id": null,
+          "random_seed": 376817014,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 44,
+          "suite": "slack",
+          "user_task_id": "user_task_12",
+          "injection_task_id": null,
+          "random_seed": 564212096,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 45,
+          "suite": "workspace",
+          "user_task_id": "user_task_7",
+          "injection_task_id": null,
+          "random_seed": 2016798108,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        }
+      ]
+    },
+    "retained_attack": {
+      "cases": 195,
+      "jobs": 585,
+      "suite_case_counts": {
+        "workspace": 125,
+        "banking": 30,
+        "travel": 24,
+        "slack": 16
+      },
+      "batches": [
+        {
+          "batch_index": 0,
+          "stage": "retained_attack",
+          "first_case_index": 0,
+          "last_case_index": 9,
+          "cases": 10,
+          "jobs": 30,
+          "suite_counts": {
+            "workspace": 5,
+            "banking": 3,
+            "travel": 2
+          },
+          "case_keys": [
+            "workspace/user_task_6/injection_task_5",
+            "banking/user_task_12/injection_task_6",
+            "workspace/user_task_17/injection_task_14",
+            "workspace/user_task_11/injection_task_14",
+            "travel/user_task_10/injection_task_4",
+            "banking/user_task_1/injection_task_0",
+            "banking/user_task_3/injection_task_1",
+            "workspace/user_task_7/injection_task_2",
+            "travel/user_task_3/injection_task_2",
+            "workspace/user_task_18/injection_task_14"
+          ]
+        },
+        {
+          "batch_index": 1,
+          "stage": "retained_attack",
+          "first_case_index": 10,
+          "last_case_index": 19,
+          "cases": 10,
+          "jobs": 30,
+          "suite_counts": {
+            "travel": 3,
+            "workspace": 6,
+            "banking": 1
+          },
+          "case_keys": [
+            "travel/user_task_12/injection_task_4",
+            "workspace/user_task_28/injection_task_15",
+            "workspace/user_task_27/injection_task_15",
+            "workspace/user_task_13/injection_task_15",
+            "travel/user_task_0/injection_task_2",
+            "workspace/user_task_14/injection_task_15",
+            "workspace/user_task_24/injection_task_15",
+            "banking/user_task_3/injection_task_8",
+            "workspace/user_task_35/injection_task_15",
+            "travel/user_task_7/injection_task_4"
+          ]
+        },
+        {
+          "batch_index": 2,
+          "stage": "retained_attack",
+          "first_case_index": 20,
+          "last_case_index": 29,
+          "cases": 10,
+          "jobs": 30,
+          "suite_counts": {
+            "workspace": 6,
+            "travel": 2,
+            "slack": 1,
+            "banking": 1
+          },
+          "case_keys": [
+            "workspace/user_task_9/injection_task_2",
+            "workspace/user_task_1/injection_task_15",
+            "travel/user_task_7/injection_task_2",
+            "slack/user_task_6/injection_task_7",
+            "workspace/user_task_27/injection_task_4",
+            "banking/user_task_1/injection_task_2",
+            "workspace/user_task_16/injection_task_14",
+            "travel/user_task_6/injection_task_2",
+            "workspace/user_task_17/injection_task_15",
+            "workspace/user_task_15/injection_task_4"
+          ]
+        },
+        {
+          "batch_index": 3,
+          "stage": "retained_attack",
+          "first_case_index": 30,
+          "last_case_index": 39,
+          "cases": 10,
+          "jobs": 30,
+          "suite_counts": {
+            "workspace": 8,
+            "slack": 1,
+            "banking": 1
+          },
+          "case_keys": [
+            "workspace/user_task_14/injection_task_5",
+            "workspace/user_task_27/injection_task_14",
+            "workspace/user_task_27/injection_task_5",
+            "workspace/user_task_26/injection_task_4",
+            "workspace/user_task_0/injection_task_15",
+            "workspace/user_task_11/injection_task_4",
+            "workspace/user_task_3/injection_task_4",
+            "slack/user_task_14/injection_task_2",
+            "workspace/user_task_1/injection_task_14",
+            "banking/user_task_12/injection_task_8"
+          ]
+        },
+        {
+          "batch_index": 4,
+          "stage": "retained_attack",
+          "first_case_index": 40,
+          "last_case_index": 49,
+          "cases": 10,
+          "jobs": 30,
+          "suite_counts": {
+            "banking": 1,
+            "slack": 1,
+            "workspace": 7,
+            "travel": 1
+          },
+          "case_keys": [
+            "banking/user_task_3/injection_task_3",
+            "slack/user_task_5/injection_task_7",
+            "workspace/user_task_13/injection_task_2",
+            "workspace/user_task_35/injection_task_5",
+            "workspace/user_task_33/injection_task_14",
+            "workspace/user_task_32/injection_task_5",
+            "workspace/user_task_17/injection_task_5",
+            "travel/user_task_12/injection_task_2",
+            "workspace/user_task_18/injection_task_5",
+            "workspace/user_task_26/injection_task_15"
+          ]
+        },
+        {
+          "batch_index": 5,
+          "stage": "retained_attack",
+          "first_case_index": 50,
+          "last_case_index": 59,
+          "cases": 10,
+          "jobs": 30,
+          "suite_counts": {
+            "workspace": 6,
+            "travel": 2,
+            "banking": 1,
+            "slack": 1
+          },
+          "case_keys": [
+            "workspace/user_task_13/injection_task_4",
+            "travel/user_task_8/injection_task_4",
+            "workspace/user_task_24/injection_task_4",
+            "banking/user_task_7/injection_task_1",
+            "travel/user_task_12/injection_task_3",
+            "workspace/user_task_7/injection_task_14",
+            "workspace/user_task_31/injection_task_2",
+            "slack/user_task_14/injection_task_7",
+            "workspace/user_task_32/injection_task_14",
+            "workspace/user_task_11/injection_task_2"
+          ]
+        },
+        {
+          "batch_index": 6,
+          "stage": "retained_attack",
+          "first_case_index": 60,
+          "last_case_index": 69,
+          "cases": 10,
+          "jobs": 30,
+          "suite_counts": {
+            "workspace": 4,
+            "banking": 2,
+            "travel": 3,
+            "slack": 1
+          },
+          "case_keys": [
+            "workspace/user_task_0/injection_task_5",
+            "banking/user_task_3/injection_task_2",
+            "workspace/user_task_32/injection_task_4",
+            "workspace/user_task_7/injection_task_5",
+            "travel/user_task_14/injection_task_2",
+            "travel/user_task_8/injection_task_2",
+            "banking/user_task_7/injection_task_3",
+            "workspace/user_task_7/injection_task_4",
+            "slack/user_task_16/injection_task_7",
+            "travel/user_task_14/injection_task_3"
+          ]
+        },
+        {
+          "batch_index": 7,
+          "stage": "retained_attack",
+          "first_case_index": 70,
+          "last_case_index": 79,
+          "cases": 10,
+          "jobs": 30,
+          "suite_counts": {
+            "workspace": 8,
+            "banking": 2
+          },
+          "case_keys": [
+            "workspace/user_task_33/injection_task_5",
+            "banking/user_task_13/injection_task_2",
+            "banking/user_task_13/injection_task_1",
+            "workspace/user_task_37/injection_task_4",
+            "workspace/user_task_35/injection_task_4",
+            "workspace/user_task_36/injection_task_15",
+            "workspace/user_task_28/injection_task_2",
+            "workspace/user_task_16/injection_task_15",
+            "workspace/user_task_24/injection_task_2",
+            "workspace/user_task_1/injection_task_2"
+          ]
+        },
+        {
+          "batch_index": 8,
+          "stage": "retained_attack",
+          "first_case_index": 80,
+          "last_case_index": 89,
+          "cases": 10,
+          "jobs": 30,
+          "suite_counts": {
+            "slack": 2,
+            "workspace": 6,
+            "banking": 2
+          },
+          "case_keys": [
+            "slack/user_task_1/injection_task_2",
+            "workspace/user_task_37/injection_task_14",
+            "workspace/user_task_24/injection_task_5",
+            "slack/user_task_10/injection_task_7",
+            "workspace/user_task_6/injection_task_14",
+            "workspace/user_task_36/injection_task_4",
+            "workspace/user_task_28/injection_task_5",
+            "banking/user_task_3/injection_task_0",
+            "banking/user_task_13/injection_task_6",
+            "workspace/user_task_16/injection_task_2"
+          ]
+        },
+        {
+          "batch_index": 9,
+          "stage": "retained_attack",
+          "first_case_index": 90,
+          "last_case_index": 99,
+          "cases": 10,
+          "jobs": 30,
+          "suite_counts": {
+            "banking": 4,
+            "travel": 2,
+            "workspace": 4
+          },
+          "case_keys": [
+            "banking/user_task_7/injection_task_6",
+            "banking/user_task_13/injection_task_8",
+            "travel/user_task_10/injection_task_2",
+            "workspace/user_task_36/injection_task_2",
+            "banking/user_task_1/injection_task_1",
+            "travel/user_task_7/injection_task_3",
+            "banking/user_task_3/injection_task_6",
+            "workspace/user_task_33/injection_task_2",
+            "workspace/user_task_15/injection_task_2",
+            "workspace/user_task_30/injection_task_14"
+          ]
+        },
+        {
+          "batch_index": 10,
+          "stage": "retained_attack",
+          "first_case_index": 100,
+          "last_case_index": 109,
+          "cases": 10,
+          "jobs": 30,
+          "suite_counts": {
+            "banking": 1,
+            "slack": 2,
+            "workspace": 6,
+            "travel": 1
+          },
+          "case_keys": [
+            "banking/user_task_12/injection_task_0",
+            "slack/user_task_13/injection_task_7",
+            "workspace/user_task_1/injection_task_4",
+            "workspace/user_task_9/injection_task_4",
+            "workspace/user_task_23/injection_task_2",
+            "travel/user_task_3/injection_task_4",
+            "slack/user_task_12/injection_task_7",
+            "workspace/user_task_14/injection_task_4",
+            "workspace/user_task_16/injection_task_5",
+            "workspace/user_task_36/injection_task_5"
+          ]
+        },
+        {
+          "batch_index": 11,
+          "stage": "retained_attack",
+          "first_case_index": 110,
+          "last_case_index": 119,
+          "cases": 10,
+          "jobs": 30,
+          "suite_counts": {
+            "workspace": 7,
+            "travel": 3
+          },
+          "case_keys": [
+            "workspace/user_task_28/injection_task_14",
+            "workspace/user_task_7/injection_task_15",
+            "travel/user_task_6/injection_task_4",
+            "workspace/user_task_6/injection_task_15",
+            "travel/user_task_14/injection_task_4",
+            "workspace/user_task_16/injection_task_4",
+            "travel/user_task_10/injection_task_3",
+            "workspace/user_task_11/injection_task_15",
+            "workspace/user_task_24/injection_task_14",
+            "workspace/user_task_17/injection_task_2"
+          ]
+        },
+        {
+          "batch_index": 12,
+          "stage": "retained_attack",
+          "first_case_index": 120,
+          "last_case_index": 129,
+          "cases": 10,
+          "jobs": 30,
+          "suite_counts": {
+            "workspace": 7,
+            "banking": 1,
+            "travel": 1,
+            "slack": 1
+          },
+          "case_keys": [
+            "workspace/user_task_30/injection_task_5",
+            "banking/user_task_13/injection_task_0",
+            "workspace/user_task_33/injection_task_15",
+            "workspace/user_task_37/injection_task_2",
+            "travel/user_task_6/injection_task_3",
+            "workspace/user_task_11/injection_task_5",
+            "workspace/user_task_13/injection_task_14",
+            "workspace/user_task_3/injection_task_15",
+            "slack/user_task_5/injection_task_2",
+            "workspace/user_task_9/injection_task_14"
+          ]
+        },
+        {
+          "batch_index": 13,
+          "stage": "retained_attack",
+          "first_case_index": 130,
+          "last_case_index": 139,
+          "cases": 10,
+          "jobs": 30,
+          "suite_counts": {
+            "workspace": 7,
+            "slack": 1,
+            "banking": 2
+          },
+          "case_keys": [
+            "workspace/user_task_0/injection_task_2",
+            "slack/user_task_6/injection_task_2",
+            "workspace/user_task_32/injection_task_2",
+            "banking/user_task_7/injection_task_2",
+            "workspace/user_task_14/injection_task_2",
+            "banking/user_task_7/injection_task_8",
+            "workspace/user_task_31/injection_task_14",
+            "workspace/user_task_26/injection_task_5",
+            "workspace/user_task_9/injection_task_5",
+            "workspace/user_task_14/injection_task_14"
+          ]
+        },
+        {
+          "batch_index": 14,
+          "stage": "retained_attack",
+          "first_case_index": 140,
+          "last_case_index": 149,
+          "cases": 10,
+          "jobs": 30,
+          "suite_counts": {
+            "workspace": 8,
+            "travel": 2
+          },
+          "case_keys": [
+            "workspace/user_task_37/injection_task_15",
+            "travel/user_task_0/injection_task_3",
+            "workspace/user_task_36/injection_task_14",
+            "travel/user_task_3/injection_task_3",
+            "workspace/user_task_9/injection_task_15",
+            "workspace/user_task_26/injection_task_2",
+            "workspace/user_task_23/injection_task_4",
+            "workspace/user_task_18/injection_task_15",
+            "workspace/user_task_13/injection_task_5",
+            "workspace/user_task_35/injection_task_14"
+          ]
+        },
+        {
+          "batch_index": 15,
+          "stage": "retained_attack",
+          "first_case_index": 150,
+          "last_case_index": 159,
+          "cases": 10,
+          "jobs": 30,
+          "suite_counts": {
+            "workspace": 8,
+            "slack": 1,
+            "banking": 1
+          },
+          "case_keys": [
+            "workspace/user_task_31/injection_task_4",
+            "workspace/user_task_26/injection_task_14",
+            "workspace/user_task_27/injection_task_2",
+            "slack/user_task_12/injection_task_2",
+            "banking/user_task_1/injection_task_8",
+            "workspace/user_task_17/injection_task_4",
+            "workspace/user_task_33/injection_task_4",
+            "workspace/user_task_0/injection_task_14",
+            "workspace/user_task_0/injection_task_4",
+            "workspace/user_task_18/injection_task_2"
+          ]
+        },
+        {
+          "batch_index": 16,
+          "stage": "retained_attack",
+          "first_case_index": 160,
+          "last_case_index": 169,
+          "cases": 10,
+          "jobs": 30,
+          "suite_counts": {
+            "workspace": 8,
+            "banking": 1,
+            "travel": 1
+          },
+          "case_keys": [
+            "workspace/user_task_15/injection_task_15",
+            "workspace/user_task_6/injection_task_2",
+            "workspace/user_task_3/injection_task_2",
+            "workspace/user_task_37/injection_task_5",
+            "workspace/user_task_32/injection_task_15",
+            "banking/user_task_7/injection_task_0",
+            "workspace/user_task_3/injection_task_14",
+            "travel/user_task_0/injection_task_4",
+            "workspace/user_task_31/injection_task_5",
+            "workspace/user_task_23/injection_task_14"
+          ]
+        },
+        {
+          "batch_index": 17,
+          "stage": "retained_attack",
+          "first_case_index": 170,
+          "last_case_index": 179,
+          "cases": 10,
+          "jobs": 30,
+          "suite_counts": {
+            "banking": 3,
+            "slack": 2,
+            "workspace": 5
+          },
+          "case_keys": [
+            "banking/user_task_1/injection_task_6",
+            "slack/user_task_1/injection_task_7",
+            "workspace/user_task_30/injection_task_4",
+            "workspace/user_task_35/injection_task_2",
+            "banking/user_task_12/injection_task_2",
+            "slack/user_task_16/injection_task_2",
+            "banking/user_task_12/injection_task_1",
+            "workspace/user_task_23/injection_task_15",
+            "workspace/user_task_30/injection_task_15",
+            "workspace/user_task_3/injection_task_5"
+          ]
+        },
+        {
+          "batch_index": 18,
+          "stage": "retained_attack",
+          "first_case_index": 180,
+          "last_case_index": 189,
+          "cases": 10,
+          "jobs": 30,
+          "suite_counts": {
+            "workspace": 6,
+            "slack": 2,
+            "travel": 1,
+            "banking": 1
+          },
+          "case_keys": [
+            "workspace/user_task_1/injection_task_5",
+            "slack/user_task_13/injection_task_2",
+            "workspace/user_task_18/injection_task_4",
+            "travel/user_task_8/injection_task_3",
+            "workspace/user_task_6/injection_task_4",
+            "workspace/user_task_23/injection_task_5",
+            "workspace/user_task_31/injection_task_15",
+            "slack/user_task_10/injection_task_2",
+            "workspace/user_task_15/injection_task_5",
+            "banking/user_task_13/injection_task_3"
+          ]
+        },
+        {
+          "batch_index": 19,
+          "stage": "retained_attack",
+          "first_case_index": 190,
+          "last_case_index": 194,
+          "cases": 5,
+          "jobs": 15,
+          "suite_counts": {
+            "workspace": 3,
+            "banking": 2
+          },
+          "case_keys": [
+            "workspace/user_task_15/injection_task_14",
+            "workspace/user_task_30/injection_task_2",
+            "workspace/user_task_28/injection_task_4",
+            "banking/user_task_1/injection_task_3",
+            "banking/user_task_12/injection_task_3"
+          ]
+        }
+      ],
+      "case_schedule": [
+        {
+          "case_index": 0,
+          "suite": "workspace",
+          "user_task_id": "user_task_6",
+          "injection_task_id": "injection_task_5",
+          "random_seed": 1149739205,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 1,
+          "suite": "banking",
+          "user_task_id": "user_task_12",
+          "injection_task_id": "injection_task_6",
+          "random_seed": 323765413,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 2,
+          "suite": "workspace",
+          "user_task_id": "user_task_17",
+          "injection_task_id": "injection_task_14",
+          "random_seed": 326271722,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 3,
+          "suite": "workspace",
+          "user_task_id": "user_task_11",
+          "injection_task_id": "injection_task_14",
+          "random_seed": 1956937249,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 4,
+          "suite": "travel",
+          "user_task_id": "user_task_10",
+          "injection_task_id": "injection_task_4",
+          "random_seed": 1823171218,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 5,
+          "suite": "banking",
+          "user_task_id": "user_task_1",
+          "injection_task_id": "injection_task_0",
+          "random_seed": 144151333,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 6,
+          "suite": "banking",
+          "user_task_id": "user_task_3",
+          "injection_task_id": "injection_task_1",
+          "random_seed": 590209838,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 7,
+          "suite": "workspace",
+          "user_task_id": "user_task_7",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 354324806,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 8,
+          "suite": "travel",
+          "user_task_id": "user_task_3",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 1440008750,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 9,
+          "suite": "workspace",
+          "user_task_id": "user_task_18",
+          "injection_task_id": "injection_task_14",
+          "random_seed": 918665214,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 10,
+          "suite": "travel",
+          "user_task_id": "user_task_12",
+          "injection_task_id": "injection_task_4",
+          "random_seed": 1049654455,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 11,
+          "suite": "workspace",
+          "user_task_id": "user_task_28",
+          "injection_task_id": "injection_task_15",
+          "random_seed": 320255066,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 12,
+          "suite": "workspace",
+          "user_task_id": "user_task_27",
+          "injection_task_id": "injection_task_15",
+          "random_seed": 700565720,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 13,
+          "suite": "workspace",
+          "user_task_id": "user_task_13",
+          "injection_task_id": "injection_task_15",
+          "random_seed": 1904689738,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 14,
+          "suite": "travel",
+          "user_task_id": "user_task_0",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 1703000241,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 15,
+          "suite": "workspace",
+          "user_task_id": "user_task_14",
+          "injection_task_id": "injection_task_15",
+          "random_seed": 2019473233,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 16,
+          "suite": "workspace",
+          "user_task_id": "user_task_24",
+          "injection_task_id": "injection_task_15",
+          "random_seed": 1173072050,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 17,
+          "suite": "banking",
+          "user_task_id": "user_task_3",
+          "injection_task_id": "injection_task_8",
+          "random_seed": 1210845340,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 18,
+          "suite": "workspace",
+          "user_task_id": "user_task_35",
+          "injection_task_id": "injection_task_15",
+          "random_seed": 361878396,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 19,
+          "suite": "travel",
+          "user_task_id": "user_task_7",
+          "injection_task_id": "injection_task_4",
+          "random_seed": 128231291,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 20,
+          "suite": "workspace",
+          "user_task_id": "user_task_9",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 1041249590,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 21,
+          "suite": "workspace",
+          "user_task_id": "user_task_1",
+          "injection_task_id": "injection_task_15",
+          "random_seed": 1076873620,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 22,
+          "suite": "travel",
+          "user_task_id": "user_task_7",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 1365359220,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 23,
+          "suite": "slack",
+          "user_task_id": "user_task_6",
+          "injection_task_id": "injection_task_7",
+          "random_seed": 1657933476,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 24,
+          "suite": "workspace",
+          "user_task_id": "user_task_27",
+          "injection_task_id": "injection_task_4",
+          "random_seed": 362843889,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 25,
+          "suite": "banking",
+          "user_task_id": "user_task_1",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 1545418749,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 26,
+          "suite": "workspace",
+          "user_task_id": "user_task_16",
+          "injection_task_id": "injection_task_14",
+          "random_seed": 468476926,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 27,
+          "suite": "travel",
+          "user_task_id": "user_task_6",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 1239930819,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 28,
+          "suite": "workspace",
+          "user_task_id": "user_task_17",
+          "injection_task_id": "injection_task_15",
+          "random_seed": 975114921,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 29,
+          "suite": "workspace",
+          "user_task_id": "user_task_15",
+          "injection_task_id": "injection_task_4",
+          "random_seed": 648544285,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 30,
+          "suite": "workspace",
+          "user_task_id": "user_task_14",
+          "injection_task_id": "injection_task_5",
+          "random_seed": 1719953049,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 31,
+          "suite": "workspace",
+          "user_task_id": "user_task_27",
+          "injection_task_id": "injection_task_14",
+          "random_seed": 443118863,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 32,
+          "suite": "workspace",
+          "user_task_id": "user_task_27",
+          "injection_task_id": "injection_task_5",
+          "random_seed": 985702993,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 33,
+          "suite": "workspace",
+          "user_task_id": "user_task_26",
+          "injection_task_id": "injection_task_4",
+          "random_seed": 1388385031,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 34,
+          "suite": "workspace",
+          "user_task_id": "user_task_0",
+          "injection_task_id": "injection_task_15",
+          "random_seed": 1148823842,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 35,
+          "suite": "workspace",
+          "user_task_id": "user_task_11",
+          "injection_task_id": "injection_task_4",
+          "random_seed": 1433609144,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 36,
+          "suite": "workspace",
+          "user_task_id": "user_task_3",
+          "injection_task_id": "injection_task_4",
+          "random_seed": 1109662734,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 37,
+          "suite": "slack",
+          "user_task_id": "user_task_14",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 691361887,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 38,
+          "suite": "workspace",
+          "user_task_id": "user_task_1",
+          "injection_task_id": "injection_task_14",
+          "random_seed": 1929306215,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 39,
+          "suite": "banking",
+          "user_task_id": "user_task_12",
+          "injection_task_id": "injection_task_8",
+          "random_seed": 1441217948,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 40,
+          "suite": "banking",
+          "user_task_id": "user_task_3",
+          "injection_task_id": "injection_task_3",
+          "random_seed": 1002702762,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 41,
+          "suite": "slack",
+          "user_task_id": "user_task_5",
+          "injection_task_id": "injection_task_7",
+          "random_seed": 1757478775,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 42,
+          "suite": "workspace",
+          "user_task_id": "user_task_13",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 1494739963,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 43,
+          "suite": "workspace",
+          "user_task_id": "user_task_35",
+          "injection_task_id": "injection_task_5",
+          "random_seed": 60510101,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 44,
+          "suite": "workspace",
+          "user_task_id": "user_task_33",
+          "injection_task_id": "injection_task_14",
+          "random_seed": 28315188,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 45,
+          "suite": "workspace",
+          "user_task_id": "user_task_32",
+          "injection_task_id": "injection_task_5",
+          "random_seed": 445363403,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 46,
+          "suite": "workspace",
+          "user_task_id": "user_task_17",
+          "injection_task_id": "injection_task_5",
+          "random_seed": 932174271,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 47,
+          "suite": "travel",
+          "user_task_id": "user_task_12",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 602215046,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 48,
+          "suite": "workspace",
+          "user_task_id": "user_task_18",
+          "injection_task_id": "injection_task_5",
+          "random_seed": 1200855287,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 49,
+          "suite": "workspace",
+          "user_task_id": "user_task_26",
+          "injection_task_id": "injection_task_15",
+          "random_seed": 142361011,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 50,
+          "suite": "workspace",
+          "user_task_id": "user_task_13",
+          "injection_task_id": "injection_task_4",
+          "random_seed": 719586906,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 51,
+          "suite": "travel",
+          "user_task_id": "user_task_8",
+          "injection_task_id": "injection_task_4",
+          "random_seed": 1680730815,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 52,
+          "suite": "workspace",
+          "user_task_id": "user_task_24",
+          "injection_task_id": "injection_task_4",
+          "random_seed": 654845074,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 53,
+          "suite": "banking",
+          "user_task_id": "user_task_7",
+          "injection_task_id": "injection_task_1",
+          "random_seed": 1527760311,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 54,
+          "suite": "travel",
+          "user_task_id": "user_task_12",
+          "injection_task_id": "injection_task_3",
+          "random_seed": 963071925,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 55,
+          "suite": "workspace",
+          "user_task_id": "user_task_7",
+          "injection_task_id": "injection_task_14",
+          "random_seed": 2138704804,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 56,
+          "suite": "workspace",
+          "user_task_id": "user_task_31",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 1698924246,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 57,
+          "suite": "slack",
+          "user_task_id": "user_task_14",
+          "injection_task_id": "injection_task_7",
+          "random_seed": 650979526,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 58,
+          "suite": "workspace",
+          "user_task_id": "user_task_32",
+          "injection_task_id": "injection_task_14",
+          "random_seed": 1345985322,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 59,
+          "suite": "workspace",
+          "user_task_id": "user_task_11",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 1487284076,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 60,
+          "suite": "workspace",
+          "user_task_id": "user_task_0",
+          "injection_task_id": "injection_task_5",
+          "random_seed": 667407049,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 61,
+          "suite": "banking",
+          "user_task_id": "user_task_3",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 735533648,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 62,
+          "suite": "workspace",
+          "user_task_id": "user_task_32",
+          "injection_task_id": "injection_task_4",
+          "random_seed": 1193804616,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 63,
+          "suite": "workspace",
+          "user_task_id": "user_task_7",
+          "injection_task_id": "injection_task_5",
+          "random_seed": 1156669156,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 64,
+          "suite": "travel",
+          "user_task_id": "user_task_14",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 298114167,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 65,
+          "suite": "travel",
+          "user_task_id": "user_task_8",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 1340062172,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 66,
+          "suite": "banking",
+          "user_task_id": "user_task_7",
+          "injection_task_id": "injection_task_3",
+          "random_seed": 1584206658,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 67,
+          "suite": "workspace",
+          "user_task_id": "user_task_7",
+          "injection_task_id": "injection_task_4",
+          "random_seed": 1205525052,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 68,
+          "suite": "slack",
+          "user_task_id": "user_task_16",
+          "injection_task_id": "injection_task_7",
+          "random_seed": 739894061,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 69,
+          "suite": "travel",
+          "user_task_id": "user_task_14",
+          "injection_task_id": "injection_task_3",
+          "random_seed": 481297670,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 70,
+          "suite": "workspace",
+          "user_task_id": "user_task_33",
+          "injection_task_id": "injection_task_5",
+          "random_seed": 670498696,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 71,
+          "suite": "banking",
+          "user_task_id": "user_task_13",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 1874959017,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 72,
+          "suite": "banking",
+          "user_task_id": "user_task_13",
+          "injection_task_id": "injection_task_1",
+          "random_seed": 1886532072,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 73,
+          "suite": "workspace",
+          "user_task_id": "user_task_37",
+          "injection_task_id": "injection_task_4",
+          "random_seed": 498790439,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 74,
+          "suite": "workspace",
+          "user_task_id": "user_task_35",
+          "injection_task_id": "injection_task_4",
+          "random_seed": 1816269640,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 75,
+          "suite": "workspace",
+          "user_task_id": "user_task_36",
+          "injection_task_id": "injection_task_15",
+          "random_seed": 260808686,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 76,
+          "suite": "workspace",
+          "user_task_id": "user_task_28",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 712802286,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 77,
+          "suite": "workspace",
+          "user_task_id": "user_task_16",
+          "injection_task_id": "injection_task_15",
+          "random_seed": 1150834980,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 78,
+          "suite": "workspace",
+          "user_task_id": "user_task_24",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 67955496,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 79,
+          "suite": "workspace",
+          "user_task_id": "user_task_1",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 1322407751,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 80,
+          "suite": "slack",
+          "user_task_id": "user_task_1",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 774434456,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 81,
+          "suite": "workspace",
+          "user_task_id": "user_task_37",
+          "injection_task_id": "injection_task_14",
+          "random_seed": 35823178,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 82,
+          "suite": "workspace",
+          "user_task_id": "user_task_24",
+          "injection_task_id": "injection_task_5",
+          "random_seed": 146859797,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 83,
+          "suite": "slack",
+          "user_task_id": "user_task_10",
+          "injection_task_id": "injection_task_7",
+          "random_seed": 824671561,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 84,
+          "suite": "workspace",
+          "user_task_id": "user_task_6",
+          "injection_task_id": "injection_task_14",
+          "random_seed": 28252236,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 85,
+          "suite": "workspace",
+          "user_task_id": "user_task_36",
+          "injection_task_id": "injection_task_4",
+          "random_seed": 1980311902,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 86,
+          "suite": "workspace",
+          "user_task_id": "user_task_28",
+          "injection_task_id": "injection_task_5",
+          "random_seed": 899890457,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 87,
+          "suite": "banking",
+          "user_task_id": "user_task_3",
+          "injection_task_id": "injection_task_0",
+          "random_seed": 1798021012,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 88,
+          "suite": "banking",
+          "user_task_id": "user_task_13",
+          "injection_task_id": "injection_task_6",
+          "random_seed": 1539829105,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 89,
+          "suite": "workspace",
+          "user_task_id": "user_task_16",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 1936079071,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 90,
+          "suite": "banking",
+          "user_task_id": "user_task_7",
+          "injection_task_id": "injection_task_6",
+          "random_seed": 595709726,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 91,
+          "suite": "banking",
+          "user_task_id": "user_task_13",
+          "injection_task_id": "injection_task_8",
+          "random_seed": 1518533240,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 92,
+          "suite": "travel",
+          "user_task_id": "user_task_10",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 586374991,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 93,
+          "suite": "workspace",
+          "user_task_id": "user_task_36",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 928396291,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 94,
+          "suite": "banking",
+          "user_task_id": "user_task_1",
+          "injection_task_id": "injection_task_1",
+          "random_seed": 2061203723,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 95,
+          "suite": "travel",
+          "user_task_id": "user_task_7",
+          "injection_task_id": "injection_task_3",
+          "random_seed": 1327580613,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 96,
+          "suite": "banking",
+          "user_task_id": "user_task_3",
+          "injection_task_id": "injection_task_6",
+          "random_seed": 1951135115,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 97,
+          "suite": "workspace",
+          "user_task_id": "user_task_33",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 1918890698,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 98,
+          "suite": "workspace",
+          "user_task_id": "user_task_15",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 896354939,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 99,
+          "suite": "workspace",
+          "user_task_id": "user_task_30",
+          "injection_task_id": "injection_task_14",
+          "random_seed": 1043458732,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 100,
+          "suite": "banking",
+          "user_task_id": "user_task_12",
+          "injection_task_id": "injection_task_0",
+          "random_seed": 636571828,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 101,
+          "suite": "slack",
+          "user_task_id": "user_task_13",
+          "injection_task_id": "injection_task_7",
+          "random_seed": 791761288,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 102,
+          "suite": "workspace",
+          "user_task_id": "user_task_1",
+          "injection_task_id": "injection_task_4",
+          "random_seed": 1720761797,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 103,
+          "suite": "workspace",
+          "user_task_id": "user_task_9",
+          "injection_task_id": "injection_task_4",
+          "random_seed": 2763567,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 104,
+          "suite": "workspace",
+          "user_task_id": "user_task_23",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 1321706380,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 105,
+          "suite": "travel",
+          "user_task_id": "user_task_3",
+          "injection_task_id": "injection_task_4",
+          "random_seed": 399910521,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 106,
+          "suite": "slack",
+          "user_task_id": "user_task_12",
+          "injection_task_id": "injection_task_7",
+          "random_seed": 873538155,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 107,
+          "suite": "workspace",
+          "user_task_id": "user_task_14",
+          "injection_task_id": "injection_task_4",
+          "random_seed": 1374126897,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 108,
+          "suite": "workspace",
+          "user_task_id": "user_task_16",
+          "injection_task_id": "injection_task_5",
+          "random_seed": 175432764,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 109,
+          "suite": "workspace",
+          "user_task_id": "user_task_36",
+          "injection_task_id": "injection_task_5",
+          "random_seed": 1041680421,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 110,
+          "suite": "workspace",
+          "user_task_id": "user_task_28",
+          "injection_task_id": "injection_task_14",
+          "random_seed": 63544730,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 111,
+          "suite": "workspace",
+          "user_task_id": "user_task_7",
+          "injection_task_id": "injection_task_15",
+          "random_seed": 1096509663,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 112,
+          "suite": "travel",
+          "user_task_id": "user_task_6",
+          "injection_task_id": "injection_task_4",
+          "random_seed": 603123870,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 113,
+          "suite": "workspace",
+          "user_task_id": "user_task_6",
+          "injection_task_id": "injection_task_15",
+          "random_seed": 350296695,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 114,
+          "suite": "travel",
+          "user_task_id": "user_task_14",
+          "injection_task_id": "injection_task_4",
+          "random_seed": 1877985513,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 115,
+          "suite": "workspace",
+          "user_task_id": "user_task_16",
+          "injection_task_id": "injection_task_4",
+          "random_seed": 58723862,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 116,
+          "suite": "travel",
+          "user_task_id": "user_task_10",
+          "injection_task_id": "injection_task_3",
+          "random_seed": 1134921254,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 117,
+          "suite": "workspace",
+          "user_task_id": "user_task_11",
+          "injection_task_id": "injection_task_15",
+          "random_seed": 803860627,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 118,
+          "suite": "workspace",
+          "user_task_id": "user_task_24",
+          "injection_task_id": "injection_task_14",
+          "random_seed": 1471122583,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 119,
+          "suite": "workspace",
+          "user_task_id": "user_task_17",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 1053891879,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 120,
+          "suite": "workspace",
+          "user_task_id": "user_task_30",
+          "injection_task_id": "injection_task_5",
+          "random_seed": 1593513388,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 121,
+          "suite": "banking",
+          "user_task_id": "user_task_13",
+          "injection_task_id": "injection_task_0",
+          "random_seed": 624898977,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 122,
+          "suite": "workspace",
+          "user_task_id": "user_task_33",
+          "injection_task_id": "injection_task_15",
+          "random_seed": 1278240509,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 123,
+          "suite": "workspace",
+          "user_task_id": "user_task_37",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 876517366,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 124,
+          "suite": "travel",
+          "user_task_id": "user_task_6",
+          "injection_task_id": "injection_task_3",
+          "random_seed": 548967302,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 125,
+          "suite": "workspace",
+          "user_task_id": "user_task_11",
+          "injection_task_id": "injection_task_5",
+          "random_seed": 475007434,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 126,
+          "suite": "workspace",
+          "user_task_id": "user_task_13",
+          "injection_task_id": "injection_task_14",
+          "random_seed": 939395603,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 127,
+          "suite": "workspace",
+          "user_task_id": "user_task_3",
+          "injection_task_id": "injection_task_15",
+          "random_seed": 906634146,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 128,
+          "suite": "slack",
+          "user_task_id": "user_task_5",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 1613178854,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 129,
+          "suite": "workspace",
+          "user_task_id": "user_task_9",
+          "injection_task_id": "injection_task_14",
+          "random_seed": 417285906,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 130,
+          "suite": "workspace",
+          "user_task_id": "user_task_0",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 2097758643,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 131,
+          "suite": "slack",
+          "user_task_id": "user_task_6",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 315856926,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 132,
+          "suite": "workspace",
+          "user_task_id": "user_task_32",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 865467103,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 133,
+          "suite": "banking",
+          "user_task_id": "user_task_7",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 1009095519,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 134,
+          "suite": "workspace",
+          "user_task_id": "user_task_14",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 1936406833,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 135,
+          "suite": "banking",
+          "user_task_id": "user_task_7",
+          "injection_task_id": "injection_task_8",
+          "random_seed": 626127296,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 136,
+          "suite": "workspace",
+          "user_task_id": "user_task_31",
+          "injection_task_id": "injection_task_14",
+          "random_seed": 811431483,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 137,
+          "suite": "workspace",
+          "user_task_id": "user_task_26",
+          "injection_task_id": "injection_task_5",
+          "random_seed": 1678410374,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 138,
+          "suite": "workspace",
+          "user_task_id": "user_task_9",
+          "injection_task_id": "injection_task_5",
+          "random_seed": 132089956,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 139,
+          "suite": "workspace",
+          "user_task_id": "user_task_14",
+          "injection_task_id": "injection_task_14",
+          "random_seed": 312583721,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 140,
+          "suite": "workspace",
+          "user_task_id": "user_task_37",
+          "injection_task_id": "injection_task_15",
+          "random_seed": 1478389583,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 141,
+          "suite": "travel",
+          "user_task_id": "user_task_0",
+          "injection_task_id": "injection_task_3",
+          "random_seed": 1849170175,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 142,
+          "suite": "workspace",
+          "user_task_id": "user_task_36",
+          "injection_task_id": "injection_task_14",
+          "random_seed": 699470112,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 143,
+          "suite": "travel",
+          "user_task_id": "user_task_3",
+          "injection_task_id": "injection_task_3",
+          "random_seed": 1505136198,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 144,
+          "suite": "workspace",
+          "user_task_id": "user_task_9",
+          "injection_task_id": "injection_task_15",
+          "random_seed": 513075931,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 145,
+          "suite": "workspace",
+          "user_task_id": "user_task_26",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 334324923,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 146,
+          "suite": "workspace",
+          "user_task_id": "user_task_23",
+          "injection_task_id": "injection_task_4",
+          "random_seed": 901676316,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 147,
+          "suite": "workspace",
+          "user_task_id": "user_task_18",
+          "injection_task_id": "injection_task_15",
+          "random_seed": 1856345986,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 148,
+          "suite": "workspace",
+          "user_task_id": "user_task_13",
+          "injection_task_id": "injection_task_5",
+          "random_seed": 543462697,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 149,
+          "suite": "workspace",
+          "user_task_id": "user_task_35",
+          "injection_task_id": "injection_task_14",
+          "random_seed": 1588117787,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 150,
+          "suite": "workspace",
+          "user_task_id": "user_task_31",
+          "injection_task_id": "injection_task_4",
+          "random_seed": 2035322337,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 151,
+          "suite": "workspace",
+          "user_task_id": "user_task_26",
+          "injection_task_id": "injection_task_14",
+          "random_seed": 1321061618,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 152,
+          "suite": "workspace",
+          "user_task_id": "user_task_27",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 1017519812,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 153,
+          "suite": "slack",
+          "user_task_id": "user_task_12",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 1381663029,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 154,
+          "suite": "banking",
+          "user_task_id": "user_task_1",
+          "injection_task_id": "injection_task_8",
+          "random_seed": 1905726962,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 155,
+          "suite": "workspace",
+          "user_task_id": "user_task_17",
+          "injection_task_id": "injection_task_4",
+          "random_seed": 954389148,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 156,
+          "suite": "workspace",
+          "user_task_id": "user_task_33",
+          "injection_task_id": "injection_task_4",
+          "random_seed": 281005936,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 157,
+          "suite": "workspace",
+          "user_task_id": "user_task_0",
+          "injection_task_id": "injection_task_14",
+          "random_seed": 1635619373,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 158,
+          "suite": "workspace",
+          "user_task_id": "user_task_0",
+          "injection_task_id": "injection_task_4",
+          "random_seed": 504619656,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 159,
+          "suite": "workspace",
+          "user_task_id": "user_task_18",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 1992846797,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 160,
+          "suite": "workspace",
+          "user_task_id": "user_task_15",
+          "injection_task_id": "injection_task_15",
+          "random_seed": 1054044462,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 161,
+          "suite": "workspace",
+          "user_task_id": "user_task_6",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 1857470944,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 162,
+          "suite": "workspace",
+          "user_task_id": "user_task_3",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 1550333830,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 163,
+          "suite": "workspace",
+          "user_task_id": "user_task_37",
+          "injection_task_id": "injection_task_5",
+          "random_seed": 1683033385,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 164,
+          "suite": "workspace",
+          "user_task_id": "user_task_32",
+          "injection_task_id": "injection_task_15",
+          "random_seed": 290514217,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 165,
+          "suite": "banking",
+          "user_task_id": "user_task_7",
+          "injection_task_id": "injection_task_0",
+          "random_seed": 1076193408,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 166,
+          "suite": "workspace",
+          "user_task_id": "user_task_3",
+          "injection_task_id": "injection_task_14",
+          "random_seed": 252726198,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 167,
+          "suite": "travel",
+          "user_task_id": "user_task_0",
+          "injection_task_id": "injection_task_4",
+          "random_seed": 1341658200,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 168,
+          "suite": "workspace",
+          "user_task_id": "user_task_31",
+          "injection_task_id": "injection_task_5",
+          "random_seed": 933195684,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 169,
+          "suite": "workspace",
+          "user_task_id": "user_task_23",
+          "injection_task_id": "injection_task_14",
+          "random_seed": 1735959910,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 170,
+          "suite": "banking",
+          "user_task_id": "user_task_1",
+          "injection_task_id": "injection_task_6",
+          "random_seed": 302415422,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 171,
+          "suite": "slack",
+          "user_task_id": "user_task_1",
+          "injection_task_id": "injection_task_7",
+          "random_seed": 1673344382,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 172,
+          "suite": "workspace",
+          "user_task_id": "user_task_30",
+          "injection_task_id": "injection_task_4",
+          "random_seed": 1080558136,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 173,
+          "suite": "workspace",
+          "user_task_id": "user_task_35",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 1247213458,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 174,
+          "suite": "banking",
+          "user_task_id": "user_task_12",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 553629425,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 175,
+          "suite": "slack",
+          "user_task_id": "user_task_16",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 1021930041,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 176,
+          "suite": "banking",
+          "user_task_id": "user_task_12",
+          "injection_task_id": "injection_task_1",
+          "random_seed": 1584803981,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 177,
+          "suite": "workspace",
+          "user_task_id": "user_task_23",
+          "injection_task_id": "injection_task_15",
+          "random_seed": 852129349,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 178,
+          "suite": "workspace",
+          "user_task_id": "user_task_30",
+          "injection_task_id": "injection_task_15",
+          "random_seed": 665325373,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 179,
+          "suite": "workspace",
+          "user_task_id": "user_task_3",
+          "injection_task_id": "injection_task_5",
+          "random_seed": 939610359,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 180,
+          "suite": "workspace",
+          "user_task_id": "user_task_1",
+          "injection_task_id": "injection_task_5",
+          "random_seed": 986099612,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 181,
+          "suite": "slack",
+          "user_task_id": "user_task_13",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 605440261,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 182,
+          "suite": "workspace",
+          "user_task_id": "user_task_18",
+          "injection_task_id": "injection_task_4",
+          "random_seed": 1293464931,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 183,
+          "suite": "travel",
+          "user_task_id": "user_task_8",
+          "injection_task_id": "injection_task_3",
+          "random_seed": 1576742870,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 184,
+          "suite": "workspace",
+          "user_task_id": "user_task_6",
+          "injection_task_id": "injection_task_4",
+          "random_seed": 1541147180,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 185,
+          "suite": "workspace",
+          "user_task_id": "user_task_23",
+          "injection_task_id": "injection_task_5",
+          "random_seed": 1758641091,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 186,
+          "suite": "workspace",
+          "user_task_id": "user_task_31",
+          "injection_task_id": "injection_task_15",
+          "random_seed": 417006336,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 187,
+          "suite": "slack",
+          "user_task_id": "user_task_10",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 1179312051,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 188,
+          "suite": "workspace",
+          "user_task_id": "user_task_15",
+          "injection_task_id": "injection_task_5",
+          "random_seed": 912912174,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 189,
+          "suite": "banking",
+          "user_task_id": "user_task_13",
+          "injection_task_id": "injection_task_3",
+          "random_seed": 347717100,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 190,
+          "suite": "workspace",
+          "user_task_id": "user_task_15",
+          "injection_task_id": "injection_task_14",
+          "random_seed": 899133403,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 191,
+          "suite": "workspace",
+          "user_task_id": "user_task_30",
+          "injection_task_id": "injection_task_2",
+          "random_seed": 963490020,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        },
+        {
+          "case_index": 192,
+          "suite": "workspace",
+          "user_task_id": "user_task_28",
+          "injection_task_id": "injection_task_4",
+          "random_seed": 1361413227,
+          "arm_order": [
+            "no_defense",
+            "stateful_rho_v1",
+            "stateless_rho_v1"
+          ]
+        },
+        {
+          "case_index": 193,
+          "suite": "banking",
+          "user_task_id": "user_task_1",
+          "injection_task_id": "injection_task_3",
+          "random_seed": 902232700,
+          "arm_order": [
+            "stateful_rho_v1",
+            "stateless_rho_v1",
+            "no_defense"
+          ]
+        },
+        {
+          "case_index": 194,
+          "suite": "banking",
+          "user_task_id": "user_task_12",
+          "injection_task_id": "injection_task_3",
+          "random_seed": 379382812,
+          "arm_order": [
+            "stateless_rho_v1",
+            "no_defense",
+            "stateful_rho_v1"
+          ]
+        }
+      ]
+    }
+  },
+  "retained_unique_user_tasks": 46,
+  "retained_unique_attack_goals": 16,
+  "execution_rule": "A batch is an operational checkpoint, not a hypothesis test or outcome-based selection. The approved main estimand requires complete paired stateful/stateless cases across the frozen retained set. No retained API calls are authorized by this preflight."
+}

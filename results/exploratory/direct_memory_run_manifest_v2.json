@@ -1,0 +1,5910 @@
+{
+  "status": "OFFLINE PREVIEW ONLY; NOT AN AUTHORIZED EXECUTION MANIFEST",
+  "model_candidate": "ministral-14b-2512",
+  "attack_vector": "important_instructions",
+  "design_sha256": "47c79930ac5039eb5cea1457abced7b4d39f0820652250f9ac484b95762458d8",
+  "partition_sha256": "92ac73cff2bd384b2d5fdf97b561acf67b265c39e21389115a667d066dbc71a2",
+  "order_rule": "Cases SHA-256 ranked within stages; three-arm order rotates by case rank modulo 3. Diagnostic stages use no defense only.",
+  "seed_status": "FROZEN OFFLINE; PROVIDER REPEATABILITY NOT LIVE VERIFIED",
+  "seed_salt": "Paper1-direct-memory-provider-seed-v2-2026-09-23",
+  "error_rule": "An invalid or missing log pauses the stage for audit; it is not scored as an outcome.",
+  "stage_counts": {
+    "diagnostic_benign": 16,
+    "diagnostic_attack": 16,
+    "retained_benign": 138,
+    "retained_attack": 585
+  },
+  "retained_arm_counts": {
+    "no_defense": 241,
+    "stateful_rho_v1": 241,
+    "stateless_rho_v1": 241
+  },
+  "jobs": [
+    {
+      "stage": "diagnostic_benign",
+      "arm": "no_defense",
+      "random_seed": 1106952724,
+      "suite": "banking",
+      "user_task_id": "user_task_4"
+    },
+    {
+      "stage": "diagnostic_benign",
+      "arm": "no_defense",
+      "random_seed": 882581947,
+      "suite": "slack",
+      "user_task_id": "user_task_8"
+    },
+    {
+      "stage": "diagnostic_benign",
+      "arm": "no_defense",
+      "random_seed": 2123399172,
+      "suite": "travel",
+      "user_task_id": "user_task_18"
+    },
+    {
+      "stage": "diagnostic_benign",
+      "arm": "no_defense",
+      "random_seed": 1890884657,
+      "suite": "travel",
+      "user_task_id": "user_task_9"
+    },
+    {
+      "stage": "diagnostic_benign",
+      "arm": "no_defense",
+      "random_seed": 1533570284,
+      "suite": "travel",
+      "user_task_id": "user_task_17"
+    },
+    {
+      "stage": "diagnostic_benign",
+      "arm": "no_defense",
+      "random_seed": 841463462,
+      "suite": "workspace",
+      "user_task_id": "user_task_29"
+    },
+    {
+      "stage": "diagnostic_benign",
+      "arm": "no_defense",
+      "random_seed": 2023942586,
+      "suite": "slack",
+      "user_task_id": "user_task_3"
+    },
+    {
+      "stage": "diagnostic_benign",
+      "arm": "no_defense",
+      "random_seed": 2044141922,
+      "suite": "banking",
+      "user_task_id": "user_task_10"
+    },
+    {
+      "stage": "diagnostic_benign",
+      "arm": "no_defense",
+      "random_seed": 1967261958,
+      "suite": "banking",
+      "user_task_id": "user_task_14"
+    },
+    {
+      "stage": "diagnostic_benign",
+      "arm": "no_defense",
+      "random_seed": 187353220,
+      "suite": "slack",
+      "user_task_id": "user_task_15"
+    },
+    {
+      "stage": "diagnostic_benign",
+      "arm": "no_defense",
+      "random_seed": 620958253,
+      "suite": "workspace",
+      "user_task_id": "user_task_22"
+    },
+    {
+      "stage": "diagnostic_benign",
+      "arm": "no_defense",
+      "random_seed": 1043172279,
+      "suite": "workspace",
+      "user_task_id": "user_task_38"
+    },
+    {
+      "stage": "diagnostic_benign",
+      "arm": "no_defense",
+      "random_seed": 1371990432,
+      "suite": "slack",
+      "user_task_id": "user_task_9"
+    },
+    {
+      "stage": "diagnostic_benign",
+      "arm": "no_defense",
+      "random_seed": 1746209930,
+      "suite": "banking",
+      "user_task_id": "user_task_8"
+    },
+    {
+      "stage": "diagnostic_benign",
+      "arm": "no_defense",
+      "random_seed": 1637665387,
+      "suite": "travel",
+      "user_task_id": "user_task_19"
+    },
+    {
+      "stage": "diagnostic_benign",
+      "arm": "no_defense",
+      "random_seed": 1898436070,
+      "suite": "workspace",
+      "user_task_id": "user_task_10"
+    },
+    {
+      "stage": "diagnostic_attack",
+      "arm": "no_defense",
+      "random_seed": 866151491,
+      "suite": "slack",
+      "user_task_id": "user_task_8",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "diagnostic_attack",
+      "arm": "no_defense",
+      "random_seed": 1893526985,
+      "suite": "banking",
+      "user_task_id": "user_task_14",
+      "injection_task_id": "injection_task_7"
+    },
+    {
+      "stage": "diagnostic_attack",
+      "arm": "no_defense",
+      "random_seed": 1844824480,
+      "suite": "travel",
+      "user_task_id": "user_task_18",
+      "injection_task_id": "injection_task_0"
+    },
+    {
+      "stage": "diagnostic_attack",
+      "arm": "no_defense",
+      "random_seed": 1869323770,
+      "suite": "workspace",
+      "user_task_id": "user_task_29",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "diagnostic_attack",
+      "arm": "no_defense",
+      "random_seed": 1086515485,
+      "suite": "slack",
+      "user_task_id": "user_task_9",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "diagnostic_attack",
+      "arm": "no_defense",
+      "random_seed": 1060078955,
+      "suite": "banking",
+      "user_task_id": "user_task_10",
+      "injection_task_id": "injection_task_7"
+    },
+    {
+      "stage": "diagnostic_attack",
+      "arm": "no_defense",
+      "random_seed": 1880956740,
+      "suite": "slack",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "diagnostic_attack",
+      "arm": "no_defense",
+      "random_seed": 567539071,
+      "suite": "travel",
+      "user_task_id": "user_task_17",
+      "injection_task_id": "injection_task_0"
+    },
+    {
+      "stage": "diagnostic_attack",
+      "arm": "no_defense",
+      "random_seed": 1263604534,
+      "suite": "slack",
+      "user_task_id": "user_task_15",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "diagnostic_attack",
+      "arm": "no_defense",
+      "random_seed": 762765682,
+      "suite": "travel",
+      "user_task_id": "user_task_9",
+      "injection_task_id": "injection_task_0"
+    },
+    {
+      "stage": "diagnostic_attack",
+      "arm": "no_defense",
+      "random_seed": 1696924989,
+      "suite": "workspace",
+      "user_task_id": "user_task_10",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "diagnostic_attack",
+      "arm": "no_defense",
+      "random_seed": 1479722668,
+      "suite": "banking",
+      "user_task_id": "user_task_4",
+      "injection_task_id": "injection_task_7"
+    },
+    {
+      "stage": "diagnostic_attack",
+      "arm": "no_defense",
+      "random_seed": 834544870,
+      "suite": "workspace",
+      "user_task_id": "user_task_22",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "diagnostic_attack",
+      "arm": "no_defense",
+      "random_seed": 1166325248,
+      "suite": "banking",
+      "user_task_id": "user_task_8",
+      "injection_task_id": "injection_task_7"
+    },
+    {
+      "stage": "diagnostic_attack",
+      "arm": "no_defense",
+      "random_seed": 1774582531,
+      "suite": "travel",
+      "user_task_id": "user_task_19",
+      "injection_task_id": "injection_task_0"
+    },
+    {
+      "stage": "diagnostic_attack",
+      "arm": "no_defense",
+      "random_seed": 967233343,
+      "suite": "workspace",
+      "user_task_id": "user_task_38",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 1221505848,
+      "suite": "workspace",
+      "user_task_id": "user_task_33"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1221505848,
+      "suite": "workspace",
+      "user_task_id": "user_task_33"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1221505848,
+      "suite": "workspace",
+      "user_task_id": "user_task_33"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 160721813,
+      "suite": "workspace",
+      "user_task_id": "user_task_32"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 160721813,
+      "suite": "workspace",
+      "user_task_id": "user_task_32"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 160721813,
+      "suite": "workspace",
+      "user_task_id": "user_task_32"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 165622649,
+      "suite": "workspace",
+      "user_task_id": "user_task_26"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 165622649,
+      "suite": "workspace",
+      "user_task_id": "user_task_26"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 165622649,
+      "suite": "workspace",
+      "user_task_id": "user_task_26"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 1040045898,
+      "suite": "travel",
+      "user_task_id": "user_task_8"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1040045898,
+      "suite": "travel",
+      "user_task_id": "user_task_8"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1040045898,
+      "suite": "travel",
+      "user_task_id": "user_task_8"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1465547623,
+      "suite": "workspace",
+      "user_task_id": "user_task_37"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1465547623,
+      "suite": "workspace",
+      "user_task_id": "user_task_37"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 1465547623,
+      "suite": "workspace",
+      "user_task_id": "user_task_37"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 386115552,
+      "suite": "workspace",
+      "user_task_id": "user_task_27"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 386115552,
+      "suite": "workspace",
+      "user_task_id": "user_task_27"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 386115552,
+      "suite": "workspace",
+      "user_task_id": "user_task_27"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 2120230178,
+      "suite": "workspace",
+      "user_task_id": "user_task_28"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 2120230178,
+      "suite": "workspace",
+      "user_task_id": "user_task_28"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 2120230178,
+      "suite": "workspace",
+      "user_task_id": "user_task_28"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1263110819,
+      "suite": "travel",
+      "user_task_id": "user_task_3"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1263110819,
+      "suite": "travel",
+      "user_task_id": "user_task_3"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 1263110819,
+      "suite": "travel",
+      "user_task_id": "user_task_3"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1474595004,
+      "suite": "workspace",
+      "user_task_id": "user_task_16"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 1474595004,
+      "suite": "workspace",
+      "user_task_id": "user_task_16"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1474595004,
+      "suite": "workspace",
+      "user_task_id": "user_task_16"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 1713491949,
+      "suite": "banking",
+      "user_task_id": "user_task_3"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1713491949,
+      "suite": "banking",
+      "user_task_id": "user_task_3"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1713491949,
+      "suite": "banking",
+      "user_task_id": "user_task_3"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 879900563,
+      "suite": "slack",
+      "user_task_id": "user_task_14"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 879900563,
+      "suite": "slack",
+      "user_task_id": "user_task_14"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 879900563,
+      "suite": "slack",
+      "user_task_id": "user_task_14"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 2113496861,
+      "suite": "travel",
+      "user_task_id": "user_task_12"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 2113496861,
+      "suite": "travel",
+      "user_task_id": "user_task_12"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 2113496861,
+      "suite": "travel",
+      "user_task_id": "user_task_12"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 787047095,
+      "suite": "workspace",
+      "user_task_id": "user_task_17"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 787047095,
+      "suite": "workspace",
+      "user_task_id": "user_task_17"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 787047095,
+      "suite": "workspace",
+      "user_task_id": "user_task_17"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1559533645,
+      "suite": "workspace",
+      "user_task_id": "user_task_18"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1559533645,
+      "suite": "workspace",
+      "user_task_id": "user_task_18"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 1559533645,
+      "suite": "workspace",
+      "user_task_id": "user_task_18"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1971170306,
+      "suite": "workspace",
+      "user_task_id": "user_task_9"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 1971170306,
+      "suite": "workspace",
+      "user_task_id": "user_task_9"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1971170306,
+      "suite": "workspace",
+      "user_task_id": "user_task_9"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 870212546,
+      "suite": "travel",
+      "user_task_id": "user_task_0"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 870212546,
+      "suite": "travel",
+      "user_task_id": "user_task_0"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 870212546,
+      "suite": "travel",
+      "user_task_id": "user_task_0"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1426743636,
+      "suite": "workspace",
+      "user_task_id": "user_task_23"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1426743636,
+      "suite": "workspace",
+      "user_task_id": "user_task_23"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 1426743636,
+      "suite": "workspace",
+      "user_task_id": "user_task_23"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 294895287,
+      "suite": "slack",
+      "user_task_id": "user_task_10"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 294895287,
+      "suite": "slack",
+      "user_task_id": "user_task_10"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 294895287,
+      "suite": "slack",
+      "user_task_id": "user_task_10"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 1393486493,
+      "suite": "banking",
+      "user_task_id": "user_task_1"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1393486493,
+      "suite": "banking",
+      "user_task_id": "user_task_1"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1393486493,
+      "suite": "banking",
+      "user_task_id": "user_task_1"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 268849267,
+      "suite": "banking",
+      "user_task_id": "user_task_13"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 268849267,
+      "suite": "banking",
+      "user_task_id": "user_task_13"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 268849267,
+      "suite": "banking",
+      "user_task_id": "user_task_13"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 2063622139,
+      "suite": "travel",
+      "user_task_id": "user_task_7"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 2063622139,
+      "suite": "travel",
+      "user_task_id": "user_task_7"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 2063622139,
+      "suite": "travel",
+      "user_task_id": "user_task_7"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 174489625,
+      "suite": "workspace",
+      "user_task_id": "user_task_31"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 174489625,
+      "suite": "workspace",
+      "user_task_id": "user_task_31"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 174489625,
+      "suite": "workspace",
+      "user_task_id": "user_task_31"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 308408049,
+      "suite": "slack",
+      "user_task_id": "user_task_1"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 308408049,
+      "suite": "slack",
+      "user_task_id": "user_task_1"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 308408049,
+      "suite": "slack",
+      "user_task_id": "user_task_1"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 874378266,
+      "suite": "travel",
+      "user_task_id": "user_task_10"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 874378266,
+      "suite": "travel",
+      "user_task_id": "user_task_10"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 874378266,
+      "suite": "travel",
+      "user_task_id": "user_task_10"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 425046141,
+      "suite": "travel",
+      "user_task_id": "user_task_6"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 425046141,
+      "suite": "travel",
+      "user_task_id": "user_task_6"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 425046141,
+      "suite": "travel",
+      "user_task_id": "user_task_6"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 49571350,
+      "suite": "workspace",
+      "user_task_id": "user_task_14"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 49571350,
+      "suite": "workspace",
+      "user_task_id": "user_task_14"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 49571350,
+      "suite": "workspace",
+      "user_task_id": "user_task_14"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 73182216,
+      "suite": "workspace",
+      "user_task_id": "user_task_15"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 73182216,
+      "suite": "workspace",
+      "user_task_id": "user_task_15"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 73182216,
+      "suite": "workspace",
+      "user_task_id": "user_task_15"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 1931478445,
+      "suite": "workspace",
+      "user_task_id": "user_task_24"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1931478445,
+      "suite": "workspace",
+      "user_task_id": "user_task_24"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1931478445,
+      "suite": "workspace",
+      "user_task_id": "user_task_24"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 2087551688,
+      "suite": "workspace",
+      "user_task_id": "user_task_36"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 2087551688,
+      "suite": "workspace",
+      "user_task_id": "user_task_36"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 2087551688,
+      "suite": "workspace",
+      "user_task_id": "user_task_36"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 534578753,
+      "suite": "banking",
+      "user_task_id": "user_task_7"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 534578753,
+      "suite": "banking",
+      "user_task_id": "user_task_7"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 534578753,
+      "suite": "banking",
+      "user_task_id": "user_task_7"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 578088552,
+      "suite": "workspace",
+      "user_task_id": "user_task_35"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 578088552,
+      "suite": "workspace",
+      "user_task_id": "user_task_35"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 578088552,
+      "suite": "workspace",
+      "user_task_id": "user_task_35"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 227644746,
+      "suite": "workspace",
+      "user_task_id": "user_task_0"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 227644746,
+      "suite": "workspace",
+      "user_task_id": "user_task_0"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 227644746,
+      "suite": "workspace",
+      "user_task_id": "user_task_0"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1405882283,
+      "suite": "workspace",
+      "user_task_id": "user_task_13"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 1405882283,
+      "suite": "workspace",
+      "user_task_id": "user_task_13"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1405882283,
+      "suite": "workspace",
+      "user_task_id": "user_task_13"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 1319268607,
+      "suite": "workspace",
+      "user_task_id": "user_task_6"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1319268607,
+      "suite": "workspace",
+      "user_task_id": "user_task_6"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1319268607,
+      "suite": "workspace",
+      "user_task_id": "user_task_6"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 35707085,
+      "suite": "travel",
+      "user_task_id": "user_task_14"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 35707085,
+      "suite": "travel",
+      "user_task_id": "user_task_14"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 35707085,
+      "suite": "travel",
+      "user_task_id": "user_task_14"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 915723856,
+      "suite": "banking",
+      "user_task_id": "user_task_12"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 915723856,
+      "suite": "banking",
+      "user_task_id": "user_task_12"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 915723856,
+      "suite": "banking",
+      "user_task_id": "user_task_12"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 2049739034,
+      "suite": "workspace",
+      "user_task_id": "user_task_3"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 2049739034,
+      "suite": "workspace",
+      "user_task_id": "user_task_3"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 2049739034,
+      "suite": "workspace",
+      "user_task_id": "user_task_3"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1993354844,
+      "suite": "slack",
+      "user_task_id": "user_task_5"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1993354844,
+      "suite": "slack",
+      "user_task_id": "user_task_5"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 1993354844,
+      "suite": "slack",
+      "user_task_id": "user_task_5"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1743770665,
+      "suite": "slack",
+      "user_task_id": "user_task_6"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 1743770665,
+      "suite": "slack",
+      "user_task_id": "user_task_6"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1743770665,
+      "suite": "slack",
+      "user_task_id": "user_task_6"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 1596471887,
+      "suite": "workspace",
+      "user_task_id": "user_task_30"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1596471887,
+      "suite": "workspace",
+      "user_task_id": "user_task_30"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1596471887,
+      "suite": "workspace",
+      "user_task_id": "user_task_30"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1645461849,
+      "suite": "workspace",
+      "user_task_id": "user_task_1"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1645461849,
+      "suite": "workspace",
+      "user_task_id": "user_task_1"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 1645461849,
+      "suite": "workspace",
+      "user_task_id": "user_task_1"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1211204257,
+      "suite": "slack",
+      "user_task_id": "user_task_16"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 1211204257,
+      "suite": "slack",
+      "user_task_id": "user_task_16"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1211204257,
+      "suite": "slack",
+      "user_task_id": "user_task_16"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 230069988,
+      "suite": "slack",
+      "user_task_id": "user_task_13"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 230069988,
+      "suite": "slack",
+      "user_task_id": "user_task_13"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 230069988,
+      "suite": "slack",
+      "user_task_id": "user_task_13"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 376817014,
+      "suite": "workspace",
+      "user_task_id": "user_task_11"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 376817014,
+      "suite": "workspace",
+      "user_task_id": "user_task_11"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 376817014,
+      "suite": "workspace",
+      "user_task_id": "user_task_11"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 564212096,
+      "suite": "slack",
+      "user_task_id": "user_task_12"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 564212096,
+      "suite": "slack",
+      "user_task_id": "user_task_12"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 564212096,
+      "suite": "slack",
+      "user_task_id": "user_task_12"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "no_defense",
+      "random_seed": 2016798108,
+      "suite": "workspace",
+      "user_task_id": "user_task_7"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateful_rho_v1",
+      "random_seed": 2016798108,
+      "suite": "workspace",
+      "user_task_id": "user_task_7"
+    },
+    {
+      "stage": "retained_benign",
+      "arm": "stateless_rho_v1",
+      "random_seed": 2016798108,
+      "suite": "workspace",
+      "user_task_id": "user_task_7"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1149739205,
+      "suite": "workspace",
+      "user_task_id": "user_task_6",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1149739205,
+      "suite": "workspace",
+      "user_task_id": "user_task_6",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1149739205,
+      "suite": "workspace",
+      "user_task_id": "user_task_6",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 323765413,
+      "suite": "banking",
+      "user_task_id": "user_task_12",
+      "injection_task_id": "injection_task_6"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 323765413,
+      "suite": "banking",
+      "user_task_id": "user_task_12",
+      "injection_task_id": "injection_task_6"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 323765413,
+      "suite": "banking",
+      "user_task_id": "user_task_12",
+      "injection_task_id": "injection_task_6"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 326271722,
+      "suite": "workspace",
+      "user_task_id": "user_task_17",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 326271722,
+      "suite": "workspace",
+      "user_task_id": "user_task_17",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 326271722,
+      "suite": "workspace",
+      "user_task_id": "user_task_17",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1956937249,
+      "suite": "workspace",
+      "user_task_id": "user_task_11",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1956937249,
+      "suite": "workspace",
+      "user_task_id": "user_task_11",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1956937249,
+      "suite": "workspace",
+      "user_task_id": "user_task_11",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1823171218,
+      "suite": "travel",
+      "user_task_id": "user_task_10",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1823171218,
+      "suite": "travel",
+      "user_task_id": "user_task_10",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1823171218,
+      "suite": "travel",
+      "user_task_id": "user_task_10",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 144151333,
+      "suite": "banking",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_0"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 144151333,
+      "suite": "banking",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_0"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 144151333,
+      "suite": "banking",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_0"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 590209838,
+      "suite": "banking",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_1"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 590209838,
+      "suite": "banking",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_1"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 590209838,
+      "suite": "banking",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_1"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 354324806,
+      "suite": "workspace",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 354324806,
+      "suite": "workspace",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 354324806,
+      "suite": "workspace",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1440008750,
+      "suite": "travel",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1440008750,
+      "suite": "travel",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1440008750,
+      "suite": "travel",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 918665214,
+      "suite": "workspace",
+      "user_task_id": "user_task_18",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 918665214,
+      "suite": "workspace",
+      "user_task_id": "user_task_18",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 918665214,
+      "suite": "workspace",
+      "user_task_id": "user_task_18",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1049654455,
+      "suite": "travel",
+      "user_task_id": "user_task_12",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1049654455,
+      "suite": "travel",
+      "user_task_id": "user_task_12",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1049654455,
+      "suite": "travel",
+      "user_task_id": "user_task_12",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 320255066,
+      "suite": "workspace",
+      "user_task_id": "user_task_28",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 320255066,
+      "suite": "workspace",
+      "user_task_id": "user_task_28",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 320255066,
+      "suite": "workspace",
+      "user_task_id": "user_task_28",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 700565720,
+      "suite": "workspace",
+      "user_task_id": "user_task_27",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 700565720,
+      "suite": "workspace",
+      "user_task_id": "user_task_27",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 700565720,
+      "suite": "workspace",
+      "user_task_id": "user_task_27",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1904689738,
+      "suite": "workspace",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1904689738,
+      "suite": "workspace",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1904689738,
+      "suite": "workspace",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1703000241,
+      "suite": "travel",
+      "user_task_id": "user_task_0",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1703000241,
+      "suite": "travel",
+      "user_task_id": "user_task_0",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1703000241,
+      "suite": "travel",
+      "user_task_id": "user_task_0",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 2019473233,
+      "suite": "workspace",
+      "user_task_id": "user_task_14",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 2019473233,
+      "suite": "workspace",
+      "user_task_id": "user_task_14",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 2019473233,
+      "suite": "workspace",
+      "user_task_id": "user_task_14",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1173072050,
+      "suite": "workspace",
+      "user_task_id": "user_task_24",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1173072050,
+      "suite": "workspace",
+      "user_task_id": "user_task_24",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1173072050,
+      "suite": "workspace",
+      "user_task_id": "user_task_24",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1210845340,
+      "suite": "banking",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_8"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1210845340,
+      "suite": "banking",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_8"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1210845340,
+      "suite": "banking",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_8"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 361878396,
+      "suite": "workspace",
+      "user_task_id": "user_task_35",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 361878396,
+      "suite": "workspace",
+      "user_task_id": "user_task_35",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 361878396,
+      "suite": "workspace",
+      "user_task_id": "user_task_35",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 128231291,
+      "suite": "travel",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 128231291,
+      "suite": "travel",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 128231291,
+      "suite": "travel",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1041249590,
+      "suite": "workspace",
+      "user_task_id": "user_task_9",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1041249590,
+      "suite": "workspace",
+      "user_task_id": "user_task_9",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1041249590,
+      "suite": "workspace",
+      "user_task_id": "user_task_9",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1076873620,
+      "suite": "workspace",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1076873620,
+      "suite": "workspace",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1076873620,
+      "suite": "workspace",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1365359220,
+      "suite": "travel",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1365359220,
+      "suite": "travel",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1365359220,
+      "suite": "travel",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1657933476,
+      "suite": "slack",
+      "user_task_id": "user_task_6",
+      "injection_task_id": "injection_task_7"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1657933476,
+      "suite": "slack",
+      "user_task_id": "user_task_6",
+      "injection_task_id": "injection_task_7"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1657933476,
+      "suite": "slack",
+      "user_task_id": "user_task_6",
+      "injection_task_id": "injection_task_7"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 362843889,
+      "suite": "workspace",
+      "user_task_id": "user_task_27",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 362843889,
+      "suite": "workspace",
+      "user_task_id": "user_task_27",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 362843889,
+      "suite": "workspace",
+      "user_task_id": "user_task_27",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1545418749,
+      "suite": "banking",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1545418749,
+      "suite": "banking",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1545418749,
+      "suite": "banking",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 468476926,
+      "suite": "workspace",
+      "user_task_id": "user_task_16",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 468476926,
+      "suite": "workspace",
+      "user_task_id": "user_task_16",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 468476926,
+      "suite": "workspace",
+      "user_task_id": "user_task_16",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1239930819,
+      "suite": "travel",
+      "user_task_id": "user_task_6",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1239930819,
+      "suite": "travel",
+      "user_task_id": "user_task_6",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1239930819,
+      "suite": "travel",
+      "user_task_id": "user_task_6",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 975114921,
+      "suite": "workspace",
+      "user_task_id": "user_task_17",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 975114921,
+      "suite": "workspace",
+      "user_task_id": "user_task_17",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 975114921,
+      "suite": "workspace",
+      "user_task_id": "user_task_17",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 648544285,
+      "suite": "workspace",
+      "user_task_id": "user_task_15",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 648544285,
+      "suite": "workspace",
+      "user_task_id": "user_task_15",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 648544285,
+      "suite": "workspace",
+      "user_task_id": "user_task_15",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1719953049,
+      "suite": "workspace",
+      "user_task_id": "user_task_14",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1719953049,
+      "suite": "workspace",
+      "user_task_id": "user_task_14",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1719953049,
+      "suite": "workspace",
+      "user_task_id": "user_task_14",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 443118863,
+      "suite": "workspace",
+      "user_task_id": "user_task_27",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 443118863,
+      "suite": "workspace",
+      "user_task_id": "user_task_27",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 443118863,
+      "suite": "workspace",
+      "user_task_id": "user_task_27",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 985702993,
+      "suite": "workspace",
+      "user_task_id": "user_task_27",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 985702993,
+      "suite": "workspace",
+      "user_task_id": "user_task_27",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 985702993,
+      "suite": "workspace",
+      "user_task_id": "user_task_27",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1388385031,
+      "suite": "workspace",
+      "user_task_id": "user_task_26",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1388385031,
+      "suite": "workspace",
+      "user_task_id": "user_task_26",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1388385031,
+      "suite": "workspace",
+      "user_task_id": "user_task_26",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1148823842,
+      "suite": "workspace",
+      "user_task_id": "user_task_0",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1148823842,
+      "suite": "workspace",
+      "user_task_id": "user_task_0",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1148823842,
+      "suite": "workspace",
+      "user_task_id": "user_task_0",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1433609144,
+      "suite": "workspace",
+      "user_task_id": "user_task_11",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1433609144,
+      "suite": "workspace",
+      "user_task_id": "user_task_11",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1433609144,
+      "suite": "workspace",
+      "user_task_id": "user_task_11",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1109662734,
+      "suite": "workspace",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1109662734,
+      "suite": "workspace",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1109662734,
+      "suite": "workspace",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 691361887,
+      "suite": "slack",
+      "user_task_id": "user_task_14",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 691361887,
+      "suite": "slack",
+      "user_task_id": "user_task_14",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 691361887,
+      "suite": "slack",
+      "user_task_id": "user_task_14",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1929306215,
+      "suite": "workspace",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1929306215,
+      "suite": "workspace",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1929306215,
+      "suite": "workspace",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1441217948,
+      "suite": "banking",
+      "user_task_id": "user_task_12",
+      "injection_task_id": "injection_task_8"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1441217948,
+      "suite": "banking",
+      "user_task_id": "user_task_12",
+      "injection_task_id": "injection_task_8"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1441217948,
+      "suite": "banking",
+      "user_task_id": "user_task_12",
+      "injection_task_id": "injection_task_8"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1002702762,
+      "suite": "banking",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1002702762,
+      "suite": "banking",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1002702762,
+      "suite": "banking",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1757478775,
+      "suite": "slack",
+      "user_task_id": "user_task_5",
+      "injection_task_id": "injection_task_7"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1757478775,
+      "suite": "slack",
+      "user_task_id": "user_task_5",
+      "injection_task_id": "injection_task_7"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1757478775,
+      "suite": "slack",
+      "user_task_id": "user_task_5",
+      "injection_task_id": "injection_task_7"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1494739963,
+      "suite": "workspace",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1494739963,
+      "suite": "workspace",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1494739963,
+      "suite": "workspace",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 60510101,
+      "suite": "workspace",
+      "user_task_id": "user_task_35",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 60510101,
+      "suite": "workspace",
+      "user_task_id": "user_task_35",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 60510101,
+      "suite": "workspace",
+      "user_task_id": "user_task_35",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 28315188,
+      "suite": "workspace",
+      "user_task_id": "user_task_33",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 28315188,
+      "suite": "workspace",
+      "user_task_id": "user_task_33",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 28315188,
+      "suite": "workspace",
+      "user_task_id": "user_task_33",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 445363403,
+      "suite": "workspace",
+      "user_task_id": "user_task_32",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 445363403,
+      "suite": "workspace",
+      "user_task_id": "user_task_32",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 445363403,
+      "suite": "workspace",
+      "user_task_id": "user_task_32",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 932174271,
+      "suite": "workspace",
+      "user_task_id": "user_task_17",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 932174271,
+      "suite": "workspace",
+      "user_task_id": "user_task_17",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 932174271,
+      "suite": "workspace",
+      "user_task_id": "user_task_17",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 602215046,
+      "suite": "travel",
+      "user_task_id": "user_task_12",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 602215046,
+      "suite": "travel",
+      "user_task_id": "user_task_12",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 602215046,
+      "suite": "travel",
+      "user_task_id": "user_task_12",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1200855287,
+      "suite": "workspace",
+      "user_task_id": "user_task_18",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1200855287,
+      "suite": "workspace",
+      "user_task_id": "user_task_18",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1200855287,
+      "suite": "workspace",
+      "user_task_id": "user_task_18",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 142361011,
+      "suite": "workspace",
+      "user_task_id": "user_task_26",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 142361011,
+      "suite": "workspace",
+      "user_task_id": "user_task_26",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 142361011,
+      "suite": "workspace",
+      "user_task_id": "user_task_26",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 719586906,
+      "suite": "workspace",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 719586906,
+      "suite": "workspace",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 719586906,
+      "suite": "workspace",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1680730815,
+      "suite": "travel",
+      "user_task_id": "user_task_8",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1680730815,
+      "suite": "travel",
+      "user_task_id": "user_task_8",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1680730815,
+      "suite": "travel",
+      "user_task_id": "user_task_8",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 654845074,
+      "suite": "workspace",
+      "user_task_id": "user_task_24",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 654845074,
+      "suite": "workspace",
+      "user_task_id": "user_task_24",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 654845074,
+      "suite": "workspace",
+      "user_task_id": "user_task_24",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1527760311,
+      "suite": "banking",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_1"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1527760311,
+      "suite": "banking",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_1"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1527760311,
+      "suite": "banking",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_1"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 963071925,
+      "suite": "travel",
+      "user_task_id": "user_task_12",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 963071925,
+      "suite": "travel",
+      "user_task_id": "user_task_12",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 963071925,
+      "suite": "travel",
+      "user_task_id": "user_task_12",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 2138704804,
+      "suite": "workspace",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 2138704804,
+      "suite": "workspace",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 2138704804,
+      "suite": "workspace",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1698924246,
+      "suite": "workspace",
+      "user_task_id": "user_task_31",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1698924246,
+      "suite": "workspace",
+      "user_task_id": "user_task_31",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1698924246,
+      "suite": "workspace",
+      "user_task_id": "user_task_31",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 650979526,
+      "suite": "slack",
+      "user_task_id": "user_task_14",
+      "injection_task_id": "injection_task_7"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 650979526,
+      "suite": "slack",
+      "user_task_id": "user_task_14",
+      "injection_task_id": "injection_task_7"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 650979526,
+      "suite": "slack",
+      "user_task_id": "user_task_14",
+      "injection_task_id": "injection_task_7"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1345985322,
+      "suite": "workspace",
+      "user_task_id": "user_task_32",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1345985322,
+      "suite": "workspace",
+      "user_task_id": "user_task_32",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1345985322,
+      "suite": "workspace",
+      "user_task_id": "user_task_32",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1487284076,
+      "suite": "workspace",
+      "user_task_id": "user_task_11",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1487284076,
+      "suite": "workspace",
+      "user_task_id": "user_task_11",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1487284076,
+      "suite": "workspace",
+      "user_task_id": "user_task_11",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 667407049,
+      "suite": "workspace",
+      "user_task_id": "user_task_0",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 667407049,
+      "suite": "workspace",
+      "user_task_id": "user_task_0",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 667407049,
+      "suite": "workspace",
+      "user_task_id": "user_task_0",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 735533648,
+      "suite": "banking",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 735533648,
+      "suite": "banking",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 735533648,
+      "suite": "banking",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1193804616,
+      "suite": "workspace",
+      "user_task_id": "user_task_32",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1193804616,
+      "suite": "workspace",
+      "user_task_id": "user_task_32",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1193804616,
+      "suite": "workspace",
+      "user_task_id": "user_task_32",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1156669156,
+      "suite": "workspace",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1156669156,
+      "suite": "workspace",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1156669156,
+      "suite": "workspace",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 298114167,
+      "suite": "travel",
+      "user_task_id": "user_task_14",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 298114167,
+      "suite": "travel",
+      "user_task_id": "user_task_14",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 298114167,
+      "suite": "travel",
+      "user_task_id": "user_task_14",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1340062172,
+      "suite": "travel",
+      "user_task_id": "user_task_8",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1340062172,
+      "suite": "travel",
+      "user_task_id": "user_task_8",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1340062172,
+      "suite": "travel",
+      "user_task_id": "user_task_8",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1584206658,
+      "suite": "banking",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1584206658,
+      "suite": "banking",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1584206658,
+      "suite": "banking",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1205525052,
+      "suite": "workspace",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1205525052,
+      "suite": "workspace",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1205525052,
+      "suite": "workspace",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 739894061,
+      "suite": "slack",
+      "user_task_id": "user_task_16",
+      "injection_task_id": "injection_task_7"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 739894061,
+      "suite": "slack",
+      "user_task_id": "user_task_16",
+      "injection_task_id": "injection_task_7"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 739894061,
+      "suite": "slack",
+      "user_task_id": "user_task_16",
+      "injection_task_id": "injection_task_7"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 481297670,
+      "suite": "travel",
+      "user_task_id": "user_task_14",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 481297670,
+      "suite": "travel",
+      "user_task_id": "user_task_14",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 481297670,
+      "suite": "travel",
+      "user_task_id": "user_task_14",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 670498696,
+      "suite": "workspace",
+      "user_task_id": "user_task_33",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 670498696,
+      "suite": "workspace",
+      "user_task_id": "user_task_33",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 670498696,
+      "suite": "workspace",
+      "user_task_id": "user_task_33",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1874959017,
+      "suite": "banking",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1874959017,
+      "suite": "banking",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1874959017,
+      "suite": "banking",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1886532072,
+      "suite": "banking",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_1"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1886532072,
+      "suite": "banking",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_1"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1886532072,
+      "suite": "banking",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_1"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 498790439,
+      "suite": "workspace",
+      "user_task_id": "user_task_37",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 498790439,
+      "suite": "workspace",
+      "user_task_id": "user_task_37",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 498790439,
+      "suite": "workspace",
+      "user_task_id": "user_task_37",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1816269640,
+      "suite": "workspace",
+      "user_task_id": "user_task_35",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1816269640,
+      "suite": "workspace",
+      "user_task_id": "user_task_35",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1816269640,
+      "suite": "workspace",
+      "user_task_id": "user_task_35",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 260808686,
+      "suite": "workspace",
+      "user_task_id": "user_task_36",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 260808686,
+      "suite": "workspace",
+      "user_task_id": "user_task_36",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 260808686,
+      "suite": "workspace",
+      "user_task_id": "user_task_36",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 712802286,
+      "suite": "workspace",
+      "user_task_id": "user_task_28",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 712802286,
+      "suite": "workspace",
+      "user_task_id": "user_task_28",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 712802286,
+      "suite": "workspace",
+      "user_task_id": "user_task_28",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1150834980,
+      "suite": "workspace",
+      "user_task_id": "user_task_16",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1150834980,
+      "suite": "workspace",
+      "user_task_id": "user_task_16",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1150834980,
+      "suite": "workspace",
+      "user_task_id": "user_task_16",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 67955496,
+      "suite": "workspace",
+      "user_task_id": "user_task_24",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 67955496,
+      "suite": "workspace",
+      "user_task_id": "user_task_24",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 67955496,
+      "suite": "workspace",
+      "user_task_id": "user_task_24",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1322407751,
+      "suite": "workspace",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1322407751,
+      "suite": "workspace",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1322407751,
+      "suite": "workspace",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 774434456,
+      "suite": "slack",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 774434456,
+      "suite": "slack",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 774434456,
+      "suite": "slack",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 35823178,
+      "suite": "workspace",
+      "user_task_id": "user_task_37",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 35823178,
+      "suite": "workspace",
+      "user_task_id": "user_task_37",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 35823178,
+      "suite": "workspace",
+      "user_task_id": "user_task_37",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 146859797,
+      "suite": "workspace",
+      "user_task_id": "user_task_24",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 146859797,
+      "suite": "workspace",
+      "user_task_id": "user_task_24",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 146859797,
+      "suite": "workspace",
+      "user_task_id": "user_task_24",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 824671561,
+      "suite": "slack",
+      "user_task_id": "user_task_10",
+      "injection_task_id": "injection_task_7"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 824671561,
+      "suite": "slack",
+      "user_task_id": "user_task_10",
+      "injection_task_id": "injection_task_7"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 824671561,
+      "suite": "slack",
+      "user_task_id": "user_task_10",
+      "injection_task_id": "injection_task_7"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 28252236,
+      "suite": "workspace",
+      "user_task_id": "user_task_6",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 28252236,
+      "suite": "workspace",
+      "user_task_id": "user_task_6",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 28252236,
+      "suite": "workspace",
+      "user_task_id": "user_task_6",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1980311902,
+      "suite": "workspace",
+      "user_task_id": "user_task_36",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1980311902,
+      "suite": "workspace",
+      "user_task_id": "user_task_36",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1980311902,
+      "suite": "workspace",
+      "user_task_id": "user_task_36",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 899890457,
+      "suite": "workspace",
+      "user_task_id": "user_task_28",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 899890457,
+      "suite": "workspace",
+      "user_task_id": "user_task_28",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 899890457,
+      "suite": "workspace",
+      "user_task_id": "user_task_28",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1798021012,
+      "suite": "banking",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_0"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1798021012,
+      "suite": "banking",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_0"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1798021012,
+      "suite": "banking",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_0"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1539829105,
+      "suite": "banking",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_6"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1539829105,
+      "suite": "banking",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_6"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1539829105,
+      "suite": "banking",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_6"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1936079071,
+      "suite": "workspace",
+      "user_task_id": "user_task_16",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1936079071,
+      "suite": "workspace",
+      "user_task_id": "user_task_16",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1936079071,
+      "suite": "workspace",
+      "user_task_id": "user_task_16",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 595709726,
+      "suite": "banking",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_6"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 595709726,
+      "suite": "banking",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_6"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 595709726,
+      "suite": "banking",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_6"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1518533240,
+      "suite": "banking",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_8"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1518533240,
+      "suite": "banking",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_8"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1518533240,
+      "suite": "banking",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_8"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 586374991,
+      "suite": "travel",
+      "user_task_id": "user_task_10",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 586374991,
+      "suite": "travel",
+      "user_task_id": "user_task_10",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 586374991,
+      "suite": "travel",
+      "user_task_id": "user_task_10",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 928396291,
+      "suite": "workspace",
+      "user_task_id": "user_task_36",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 928396291,
+      "suite": "workspace",
+      "user_task_id": "user_task_36",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 928396291,
+      "suite": "workspace",
+      "user_task_id": "user_task_36",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 2061203723,
+      "suite": "banking",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_1"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 2061203723,
+      "suite": "banking",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_1"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 2061203723,
+      "suite": "banking",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_1"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1327580613,
+      "suite": "travel",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1327580613,
+      "suite": "travel",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1327580613,
+      "suite": "travel",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1951135115,
+      "suite": "banking",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_6"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1951135115,
+      "suite": "banking",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_6"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1951135115,
+      "suite": "banking",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_6"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1918890698,
+      "suite": "workspace",
+      "user_task_id": "user_task_33",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1918890698,
+      "suite": "workspace",
+      "user_task_id": "user_task_33",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1918890698,
+      "suite": "workspace",
+      "user_task_id": "user_task_33",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 896354939,
+      "suite": "workspace",
+      "user_task_id": "user_task_15",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 896354939,
+      "suite": "workspace",
+      "user_task_id": "user_task_15",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 896354939,
+      "suite": "workspace",
+      "user_task_id": "user_task_15",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1043458732,
+      "suite": "workspace",
+      "user_task_id": "user_task_30",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1043458732,
+      "suite": "workspace",
+      "user_task_id": "user_task_30",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1043458732,
+      "suite": "workspace",
+      "user_task_id": "user_task_30",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 636571828,
+      "suite": "banking",
+      "user_task_id": "user_task_12",
+      "injection_task_id": "injection_task_0"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 636571828,
+      "suite": "banking",
+      "user_task_id": "user_task_12",
+      "injection_task_id": "injection_task_0"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 636571828,
+      "suite": "banking",
+      "user_task_id": "user_task_12",
+      "injection_task_id": "injection_task_0"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 791761288,
+      "suite": "slack",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_7"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 791761288,
+      "suite": "slack",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_7"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 791761288,
+      "suite": "slack",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_7"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1720761797,
+      "suite": "workspace",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1720761797,
+      "suite": "workspace",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1720761797,
+      "suite": "workspace",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 2763567,
+      "suite": "workspace",
+      "user_task_id": "user_task_9",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 2763567,
+      "suite": "workspace",
+      "user_task_id": "user_task_9",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 2763567,
+      "suite": "workspace",
+      "user_task_id": "user_task_9",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1321706380,
+      "suite": "workspace",
+      "user_task_id": "user_task_23",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1321706380,
+      "suite": "workspace",
+      "user_task_id": "user_task_23",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1321706380,
+      "suite": "workspace",
+      "user_task_id": "user_task_23",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 399910521,
+      "suite": "travel",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 399910521,
+      "suite": "travel",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 399910521,
+      "suite": "travel",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 873538155,
+      "suite": "slack",
+      "user_task_id": "user_task_12",
+      "injection_task_id": "injection_task_7"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 873538155,
+      "suite": "slack",
+      "user_task_id": "user_task_12",
+      "injection_task_id": "injection_task_7"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 873538155,
+      "suite": "slack",
+      "user_task_id": "user_task_12",
+      "injection_task_id": "injection_task_7"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1374126897,
+      "suite": "workspace",
+      "user_task_id": "user_task_14",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1374126897,
+      "suite": "workspace",
+      "user_task_id": "user_task_14",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1374126897,
+      "suite": "workspace",
+      "user_task_id": "user_task_14",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 175432764,
+      "suite": "workspace",
+      "user_task_id": "user_task_16",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 175432764,
+      "suite": "workspace",
+      "user_task_id": "user_task_16",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 175432764,
+      "suite": "workspace",
+      "user_task_id": "user_task_16",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1041680421,
+      "suite": "workspace",
+      "user_task_id": "user_task_36",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1041680421,
+      "suite": "workspace",
+      "user_task_id": "user_task_36",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1041680421,
+      "suite": "workspace",
+      "user_task_id": "user_task_36",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 63544730,
+      "suite": "workspace",
+      "user_task_id": "user_task_28",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 63544730,
+      "suite": "workspace",
+      "user_task_id": "user_task_28",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 63544730,
+      "suite": "workspace",
+      "user_task_id": "user_task_28",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1096509663,
+      "suite": "workspace",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1096509663,
+      "suite": "workspace",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1096509663,
+      "suite": "workspace",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 603123870,
+      "suite": "travel",
+      "user_task_id": "user_task_6",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 603123870,
+      "suite": "travel",
+      "user_task_id": "user_task_6",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 603123870,
+      "suite": "travel",
+      "user_task_id": "user_task_6",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 350296695,
+      "suite": "workspace",
+      "user_task_id": "user_task_6",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 350296695,
+      "suite": "workspace",
+      "user_task_id": "user_task_6",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 350296695,
+      "suite": "workspace",
+      "user_task_id": "user_task_6",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1877985513,
+      "suite": "travel",
+      "user_task_id": "user_task_14",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1877985513,
+      "suite": "travel",
+      "user_task_id": "user_task_14",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1877985513,
+      "suite": "travel",
+      "user_task_id": "user_task_14",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 58723862,
+      "suite": "workspace",
+      "user_task_id": "user_task_16",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 58723862,
+      "suite": "workspace",
+      "user_task_id": "user_task_16",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 58723862,
+      "suite": "workspace",
+      "user_task_id": "user_task_16",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1134921254,
+      "suite": "travel",
+      "user_task_id": "user_task_10",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1134921254,
+      "suite": "travel",
+      "user_task_id": "user_task_10",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1134921254,
+      "suite": "travel",
+      "user_task_id": "user_task_10",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 803860627,
+      "suite": "workspace",
+      "user_task_id": "user_task_11",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 803860627,
+      "suite": "workspace",
+      "user_task_id": "user_task_11",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 803860627,
+      "suite": "workspace",
+      "user_task_id": "user_task_11",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1471122583,
+      "suite": "workspace",
+      "user_task_id": "user_task_24",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1471122583,
+      "suite": "workspace",
+      "user_task_id": "user_task_24",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1471122583,
+      "suite": "workspace",
+      "user_task_id": "user_task_24",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1053891879,
+      "suite": "workspace",
+      "user_task_id": "user_task_17",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1053891879,
+      "suite": "workspace",
+      "user_task_id": "user_task_17",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1053891879,
+      "suite": "workspace",
+      "user_task_id": "user_task_17",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1593513388,
+      "suite": "workspace",
+      "user_task_id": "user_task_30",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1593513388,
+      "suite": "workspace",
+      "user_task_id": "user_task_30",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1593513388,
+      "suite": "workspace",
+      "user_task_id": "user_task_30",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 624898977,
+      "suite": "banking",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_0"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 624898977,
+      "suite": "banking",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_0"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 624898977,
+      "suite": "banking",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_0"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1278240509,
+      "suite": "workspace",
+      "user_task_id": "user_task_33",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1278240509,
+      "suite": "workspace",
+      "user_task_id": "user_task_33",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1278240509,
+      "suite": "workspace",
+      "user_task_id": "user_task_33",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 876517366,
+      "suite": "workspace",
+      "user_task_id": "user_task_37",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 876517366,
+      "suite": "workspace",
+      "user_task_id": "user_task_37",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 876517366,
+      "suite": "workspace",
+      "user_task_id": "user_task_37",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 548967302,
+      "suite": "travel",
+      "user_task_id": "user_task_6",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 548967302,
+      "suite": "travel",
+      "user_task_id": "user_task_6",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 548967302,
+      "suite": "travel",
+      "user_task_id": "user_task_6",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 475007434,
+      "suite": "workspace",
+      "user_task_id": "user_task_11",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 475007434,
+      "suite": "workspace",
+      "user_task_id": "user_task_11",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 475007434,
+      "suite": "workspace",
+      "user_task_id": "user_task_11",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 939395603,
+      "suite": "workspace",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 939395603,
+      "suite": "workspace",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 939395603,
+      "suite": "workspace",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 906634146,
+      "suite": "workspace",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 906634146,
+      "suite": "workspace",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 906634146,
+      "suite": "workspace",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1613178854,
+      "suite": "slack",
+      "user_task_id": "user_task_5",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1613178854,
+      "suite": "slack",
+      "user_task_id": "user_task_5",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1613178854,
+      "suite": "slack",
+      "user_task_id": "user_task_5",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 417285906,
+      "suite": "workspace",
+      "user_task_id": "user_task_9",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 417285906,
+      "suite": "workspace",
+      "user_task_id": "user_task_9",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 417285906,
+      "suite": "workspace",
+      "user_task_id": "user_task_9",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 2097758643,
+      "suite": "workspace",
+      "user_task_id": "user_task_0",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 2097758643,
+      "suite": "workspace",
+      "user_task_id": "user_task_0",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 2097758643,
+      "suite": "workspace",
+      "user_task_id": "user_task_0",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 315856926,
+      "suite": "slack",
+      "user_task_id": "user_task_6",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 315856926,
+      "suite": "slack",
+      "user_task_id": "user_task_6",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 315856926,
+      "suite": "slack",
+      "user_task_id": "user_task_6",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 865467103,
+      "suite": "workspace",
+      "user_task_id": "user_task_32",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 865467103,
+      "suite": "workspace",
+      "user_task_id": "user_task_32",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 865467103,
+      "suite": "workspace",
+      "user_task_id": "user_task_32",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1009095519,
+      "suite": "banking",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1009095519,
+      "suite": "banking",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1009095519,
+      "suite": "banking",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1936406833,
+      "suite": "workspace",
+      "user_task_id": "user_task_14",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1936406833,
+      "suite": "workspace",
+      "user_task_id": "user_task_14",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1936406833,
+      "suite": "workspace",
+      "user_task_id": "user_task_14",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 626127296,
+      "suite": "banking",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_8"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 626127296,
+      "suite": "banking",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_8"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 626127296,
+      "suite": "banking",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_8"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 811431483,
+      "suite": "workspace",
+      "user_task_id": "user_task_31",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 811431483,
+      "suite": "workspace",
+      "user_task_id": "user_task_31",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 811431483,
+      "suite": "workspace",
+      "user_task_id": "user_task_31",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1678410374,
+      "suite": "workspace",
+      "user_task_id": "user_task_26",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1678410374,
+      "suite": "workspace",
+      "user_task_id": "user_task_26",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1678410374,
+      "suite": "workspace",
+      "user_task_id": "user_task_26",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 132089956,
+      "suite": "workspace",
+      "user_task_id": "user_task_9",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 132089956,
+      "suite": "workspace",
+      "user_task_id": "user_task_9",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 132089956,
+      "suite": "workspace",
+      "user_task_id": "user_task_9",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 312583721,
+      "suite": "workspace",
+      "user_task_id": "user_task_14",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 312583721,
+      "suite": "workspace",
+      "user_task_id": "user_task_14",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 312583721,
+      "suite": "workspace",
+      "user_task_id": "user_task_14",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1478389583,
+      "suite": "workspace",
+      "user_task_id": "user_task_37",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1478389583,
+      "suite": "workspace",
+      "user_task_id": "user_task_37",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1478389583,
+      "suite": "workspace",
+      "user_task_id": "user_task_37",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1849170175,
+      "suite": "travel",
+      "user_task_id": "user_task_0",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1849170175,
+      "suite": "travel",
+      "user_task_id": "user_task_0",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1849170175,
+      "suite": "travel",
+      "user_task_id": "user_task_0",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 699470112,
+      "suite": "workspace",
+      "user_task_id": "user_task_36",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 699470112,
+      "suite": "workspace",
+      "user_task_id": "user_task_36",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 699470112,
+      "suite": "workspace",
+      "user_task_id": "user_task_36",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1505136198,
+      "suite": "travel",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1505136198,
+      "suite": "travel",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1505136198,
+      "suite": "travel",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 513075931,
+      "suite": "workspace",
+      "user_task_id": "user_task_9",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 513075931,
+      "suite": "workspace",
+      "user_task_id": "user_task_9",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 513075931,
+      "suite": "workspace",
+      "user_task_id": "user_task_9",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 334324923,
+      "suite": "workspace",
+      "user_task_id": "user_task_26",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 334324923,
+      "suite": "workspace",
+      "user_task_id": "user_task_26",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 334324923,
+      "suite": "workspace",
+      "user_task_id": "user_task_26",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 901676316,
+      "suite": "workspace",
+      "user_task_id": "user_task_23",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 901676316,
+      "suite": "workspace",
+      "user_task_id": "user_task_23",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 901676316,
+      "suite": "workspace",
+      "user_task_id": "user_task_23",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1856345986,
+      "suite": "workspace",
+      "user_task_id": "user_task_18",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1856345986,
+      "suite": "workspace",
+      "user_task_id": "user_task_18",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1856345986,
+      "suite": "workspace",
+      "user_task_id": "user_task_18",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 543462697,
+      "suite": "workspace",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 543462697,
+      "suite": "workspace",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 543462697,
+      "suite": "workspace",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1588117787,
+      "suite": "workspace",
+      "user_task_id": "user_task_35",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1588117787,
+      "suite": "workspace",
+      "user_task_id": "user_task_35",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1588117787,
+      "suite": "workspace",
+      "user_task_id": "user_task_35",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 2035322337,
+      "suite": "workspace",
+      "user_task_id": "user_task_31",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 2035322337,
+      "suite": "workspace",
+      "user_task_id": "user_task_31",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 2035322337,
+      "suite": "workspace",
+      "user_task_id": "user_task_31",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1321061618,
+      "suite": "workspace",
+      "user_task_id": "user_task_26",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1321061618,
+      "suite": "workspace",
+      "user_task_id": "user_task_26",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1321061618,
+      "suite": "workspace",
+      "user_task_id": "user_task_26",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1017519812,
+      "suite": "workspace",
+      "user_task_id": "user_task_27",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1017519812,
+      "suite": "workspace",
+      "user_task_id": "user_task_27",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1017519812,
+      "suite": "workspace",
+      "user_task_id": "user_task_27",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1381663029,
+      "suite": "slack",
+      "user_task_id": "user_task_12",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1381663029,
+      "suite": "slack",
+      "user_task_id": "user_task_12",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1381663029,
+      "suite": "slack",
+      "user_task_id": "user_task_12",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1905726962,
+      "suite": "banking",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_8"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1905726962,
+      "suite": "banking",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_8"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1905726962,
+      "suite": "banking",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_8"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 954389148,
+      "suite": "workspace",
+      "user_task_id": "user_task_17",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 954389148,
+      "suite": "workspace",
+      "user_task_id": "user_task_17",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 954389148,
+      "suite": "workspace",
+      "user_task_id": "user_task_17",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 281005936,
+      "suite": "workspace",
+      "user_task_id": "user_task_33",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 281005936,
+      "suite": "workspace",
+      "user_task_id": "user_task_33",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 281005936,
+      "suite": "workspace",
+      "user_task_id": "user_task_33",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1635619373,
+      "suite": "workspace",
+      "user_task_id": "user_task_0",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1635619373,
+      "suite": "workspace",
+      "user_task_id": "user_task_0",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1635619373,
+      "suite": "workspace",
+      "user_task_id": "user_task_0",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 504619656,
+      "suite": "workspace",
+      "user_task_id": "user_task_0",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 504619656,
+      "suite": "workspace",
+      "user_task_id": "user_task_0",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 504619656,
+      "suite": "workspace",
+      "user_task_id": "user_task_0",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1992846797,
+      "suite": "workspace",
+      "user_task_id": "user_task_18",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1992846797,
+      "suite": "workspace",
+      "user_task_id": "user_task_18",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1992846797,
+      "suite": "workspace",
+      "user_task_id": "user_task_18",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1054044462,
+      "suite": "workspace",
+      "user_task_id": "user_task_15",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1054044462,
+      "suite": "workspace",
+      "user_task_id": "user_task_15",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1054044462,
+      "suite": "workspace",
+      "user_task_id": "user_task_15",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1857470944,
+      "suite": "workspace",
+      "user_task_id": "user_task_6",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1857470944,
+      "suite": "workspace",
+      "user_task_id": "user_task_6",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1857470944,
+      "suite": "workspace",
+      "user_task_id": "user_task_6",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1550333830,
+      "suite": "workspace",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1550333830,
+      "suite": "workspace",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1550333830,
+      "suite": "workspace",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1683033385,
+      "suite": "workspace",
+      "user_task_id": "user_task_37",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1683033385,
+      "suite": "workspace",
+      "user_task_id": "user_task_37",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1683033385,
+      "suite": "workspace",
+      "user_task_id": "user_task_37",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 290514217,
+      "suite": "workspace",
+      "user_task_id": "user_task_32",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 290514217,
+      "suite": "workspace",
+      "user_task_id": "user_task_32",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 290514217,
+      "suite": "workspace",
+      "user_task_id": "user_task_32",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1076193408,
+      "suite": "banking",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_0"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1076193408,
+      "suite": "banking",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_0"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1076193408,
+      "suite": "banking",
+      "user_task_id": "user_task_7",
+      "injection_task_id": "injection_task_0"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 252726198,
+      "suite": "workspace",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 252726198,
+      "suite": "workspace",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 252726198,
+      "suite": "workspace",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1341658200,
+      "suite": "travel",
+      "user_task_id": "user_task_0",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1341658200,
+      "suite": "travel",
+      "user_task_id": "user_task_0",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1341658200,
+      "suite": "travel",
+      "user_task_id": "user_task_0",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 933195684,
+      "suite": "workspace",
+      "user_task_id": "user_task_31",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 933195684,
+      "suite": "workspace",
+      "user_task_id": "user_task_31",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 933195684,
+      "suite": "workspace",
+      "user_task_id": "user_task_31",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1735959910,
+      "suite": "workspace",
+      "user_task_id": "user_task_23",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1735959910,
+      "suite": "workspace",
+      "user_task_id": "user_task_23",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1735959910,
+      "suite": "workspace",
+      "user_task_id": "user_task_23",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 302415422,
+      "suite": "banking",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_6"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 302415422,
+      "suite": "banking",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_6"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 302415422,
+      "suite": "banking",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_6"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1673344382,
+      "suite": "slack",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_7"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1673344382,
+      "suite": "slack",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_7"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1673344382,
+      "suite": "slack",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_7"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1080558136,
+      "suite": "workspace",
+      "user_task_id": "user_task_30",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1080558136,
+      "suite": "workspace",
+      "user_task_id": "user_task_30",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1080558136,
+      "suite": "workspace",
+      "user_task_id": "user_task_30",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1247213458,
+      "suite": "workspace",
+      "user_task_id": "user_task_35",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1247213458,
+      "suite": "workspace",
+      "user_task_id": "user_task_35",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1247213458,
+      "suite": "workspace",
+      "user_task_id": "user_task_35",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 553629425,
+      "suite": "banking",
+      "user_task_id": "user_task_12",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 553629425,
+      "suite": "banking",
+      "user_task_id": "user_task_12",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 553629425,
+      "suite": "banking",
+      "user_task_id": "user_task_12",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1021930041,
+      "suite": "slack",
+      "user_task_id": "user_task_16",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1021930041,
+      "suite": "slack",
+      "user_task_id": "user_task_16",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1021930041,
+      "suite": "slack",
+      "user_task_id": "user_task_16",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1584803981,
+      "suite": "banking",
+      "user_task_id": "user_task_12",
+      "injection_task_id": "injection_task_1"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1584803981,
+      "suite": "banking",
+      "user_task_id": "user_task_12",
+      "injection_task_id": "injection_task_1"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1584803981,
+      "suite": "banking",
+      "user_task_id": "user_task_12",
+      "injection_task_id": "injection_task_1"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 852129349,
+      "suite": "workspace",
+      "user_task_id": "user_task_23",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 852129349,
+      "suite": "workspace",
+      "user_task_id": "user_task_23",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 852129349,
+      "suite": "workspace",
+      "user_task_id": "user_task_23",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 665325373,
+      "suite": "workspace",
+      "user_task_id": "user_task_30",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 665325373,
+      "suite": "workspace",
+      "user_task_id": "user_task_30",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 665325373,
+      "suite": "workspace",
+      "user_task_id": "user_task_30",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 939610359,
+      "suite": "workspace",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 939610359,
+      "suite": "workspace",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 939610359,
+      "suite": "workspace",
+      "user_task_id": "user_task_3",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 986099612,
+      "suite": "workspace",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 986099612,
+      "suite": "workspace",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 986099612,
+      "suite": "workspace",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 605440261,
+      "suite": "slack",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 605440261,
+      "suite": "slack",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 605440261,
+      "suite": "slack",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1293464931,
+      "suite": "workspace",
+      "user_task_id": "user_task_18",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1293464931,
+      "suite": "workspace",
+      "user_task_id": "user_task_18",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1293464931,
+      "suite": "workspace",
+      "user_task_id": "user_task_18",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1576742870,
+      "suite": "travel",
+      "user_task_id": "user_task_8",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1576742870,
+      "suite": "travel",
+      "user_task_id": "user_task_8",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1576742870,
+      "suite": "travel",
+      "user_task_id": "user_task_8",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1541147180,
+      "suite": "workspace",
+      "user_task_id": "user_task_6",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1541147180,
+      "suite": "workspace",
+      "user_task_id": "user_task_6",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1541147180,
+      "suite": "workspace",
+      "user_task_id": "user_task_6",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1758641091,
+      "suite": "workspace",
+      "user_task_id": "user_task_23",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1758641091,
+      "suite": "workspace",
+      "user_task_id": "user_task_23",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1758641091,
+      "suite": "workspace",
+      "user_task_id": "user_task_23",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 417006336,
+      "suite": "workspace",
+      "user_task_id": "user_task_31",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 417006336,
+      "suite": "workspace",
+      "user_task_id": "user_task_31",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 417006336,
+      "suite": "workspace",
+      "user_task_id": "user_task_31",
+      "injection_task_id": "injection_task_15"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1179312051,
+      "suite": "slack",
+      "user_task_id": "user_task_10",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1179312051,
+      "suite": "slack",
+      "user_task_id": "user_task_10",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1179312051,
+      "suite": "slack",
+      "user_task_id": "user_task_10",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 912912174,
+      "suite": "workspace",
+      "user_task_id": "user_task_15",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 912912174,
+      "suite": "workspace",
+      "user_task_id": "user_task_15",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 912912174,
+      "suite": "workspace",
+      "user_task_id": "user_task_15",
+      "injection_task_id": "injection_task_5"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 347717100,
+      "suite": "banking",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 347717100,
+      "suite": "banking",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 347717100,
+      "suite": "banking",
+      "user_task_id": "user_task_13",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 899133403,
+      "suite": "workspace",
+      "user_task_id": "user_task_15",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 899133403,
+      "suite": "workspace",
+      "user_task_id": "user_task_15",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 899133403,
+      "suite": "workspace",
+      "user_task_id": "user_task_15",
+      "injection_task_id": "injection_task_14"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 963490020,
+      "suite": "workspace",
+      "user_task_id": "user_task_30",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 963490020,
+      "suite": "workspace",
+      "user_task_id": "user_task_30",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 963490020,
+      "suite": "workspace",
+      "user_task_id": "user_task_30",
+      "injection_task_id": "injection_task_2"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 1361413227,
+      "suite": "workspace",
+      "user_task_id": "user_task_28",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 1361413227,
+      "suite": "workspace",
+      "user_task_id": "user_task_28",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 1361413227,
+      "suite": "workspace",
+      "user_task_id": "user_task_28",
+      "injection_task_id": "injection_task_4"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 902232700,
+      "suite": "banking",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 902232700,
+      "suite": "banking",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 902232700,
+      "suite": "banking",
+      "user_task_id": "user_task_1",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateless_rho_v1",
+      "random_seed": 379382812,
+      "suite": "banking",
+      "user_task_id": "user_task_12",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "no_defense",
+      "random_seed": 379382812,
+      "suite": "banking",
+      "user_task_id": "user_task_12",
+      "injection_task_id": "injection_task_3"
+    },
+    {
+      "stage": "retained_attack",
+      "arm": "stateful_rho_v1",
+      "random_seed": 379382812,
+      "suite": "banking",
+      "user_task_id": "user_task_12",
+      "injection_task_id": "injection_task_3"
+    }
+  ]
+}
