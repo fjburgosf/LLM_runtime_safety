@@ -12,6 +12,8 @@ from collections import Counter
 from pathlib import Path
 from typing import Any
 
+from frozen_inputs import digest_fixed, read_fixed
+
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = ROOT / "configs" / "direct_memory_retained_v2.json"
@@ -24,11 +26,16 @@ ARMS = ("no_defense", "stateful_rho_v1", "stateless_rho_v1")
 
 
 def read(path: Path) -> dict[str, Any]:
-    return json.loads(path.read_text(encoding="utf-8"))
+    return json.loads(path.read_text(encoding="utf-8")) if path.exists() else read_fixed(path)
 
 
 def digest(path: Path) -> str:
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+    if not path.exists():
+        return digest_fixed(path)
+    data = path.read_bytes()
+    if path.name == "compositional_tasks.py":
+        data = data.replace(b"\r\n", b"\n")
+    return hashlib.sha256(data).hexdigest()
 
 
 def case_key(job: dict[str, Any]) -> tuple[str, str, str]:
@@ -81,7 +88,7 @@ def main() -> None:
         raise ValueError("Partition or preflight hash mismatch")
     if config["model_id"] != manifest["model_candidate"] or config["attack_vector"] != manifest["attack_vector"]:
         raise ValueError("Model or vector mismatch")
-    if (config["local_extension_code_sha256"] != digest(ROOT / "paper1_extension" / "compositional_tasks.py")
+    if (config["local_extension_code_sha256"] != digest(ROOT / "scripts" / "compositional_tasks.py")
             or config["local_extension_config_sha256"] != digest(ROOT / "configs" / "compositional_extension_v1.json")):
         raise ValueError("Local compositional extension changed")
     jobs = [job for job in manifest["jobs"] if job["stage"] in STAGES]

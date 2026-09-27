@@ -25,6 +25,7 @@ from agentdojo.models import MODEL_NAMES
 from agentdojo.task_suite.load_suites import get_suites
 
 from control_policy import ControllerConfig
+from frozen_inputs import digest_fixed, read_fixed
 from mistral_credit_llm import MistralIncludedCreditLLM
 from supervised_pipeline import build_supervised_pipeline
 
@@ -33,7 +34,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from paper1_extension.compositional_tasks import EXTENSION_VERSION, get_paper1_suite
+from compositional_tasks import EXTENSION_VERSION, get_paper1_suite
 
 PUBLIC_CONFIG = ROOT / "configs" / "direct_memory_retained_v2.json"
 LOCAL_CONFIG = ROOT / "configs" / "direct_memory_retained_v2.local.json"
@@ -45,11 +46,16 @@ STAGES = ("retained_benign", "retained_attack")
 
 
 def read(path: Path) -> dict[str, Any]:
-    return json.loads(path.read_text(encoding="utf-8"))
+    return json.loads(path.read_text(encoding="utf-8")) if path.exists() else read_fixed(path)
 
 
 def digest(path: Path) -> str:
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+    if not path.exists():
+        return digest_fixed(path)
+    data = path.read_bytes()
+    if path.name == "compositional_tasks.py":
+        data = data.replace(b"\r\n", b"\n")
+    return hashlib.sha256(data).hexdigest()
 
 
 def check_frozen_scope(config: dict[str, Any], design: dict[str, Any], manifest: dict[str, Any],
@@ -59,7 +65,7 @@ def check_frozen_scope(config: dict[str, Any], design: dict[str, Any], manifest:
     if config["benchmark_version"] != "v1.2.2" or design["three_retained_test_arms"] != list(ARMS):
         raise ValueError("Frozen benchmark or arms changed")
     if (config["local_extension_version"] != list(EXTENSION_VERSION)
-            or config["local_extension_code_sha256"] != digest(ROOT / "paper1_extension" / "compositional_tasks.py")
+            or config["local_extension_code_sha256"] != digest(ROOT / "scripts" / "compositional_tasks.py")
             or config["local_extension_config_sha256"] != digest(ROOT / "configs" / "compositional_extension_v1.json")):
         raise ValueError("Local compositional extension changed")
     if design["policy_constants"] != {

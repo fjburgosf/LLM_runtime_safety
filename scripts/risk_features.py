@@ -7,6 +7,8 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any
 
+from frozen_inputs import read_fixed
+
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_REGISTRY = PROJECT_ROOT / "configs" / "capability_registry_v0.json"
@@ -38,7 +40,8 @@ class CapabilityRiskEstimator:
         minimum_impact_level: int = 0,
     ) -> None:
         self.registry_path = registry_path
-        self.registry = json.loads(registry_path.read_text(encoding="utf-8"))
+        self.registry = (json.loads(registry_path.read_text(encoding="utf-8"))
+                         if registry_path.exists() else read_fixed(registry_path))
         self.impact_by_tool = {
             tool: int(level)
             for level, tools in self.registry["tools_by_impact"].items()

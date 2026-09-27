@@ -154,7 +154,7 @@ def main() -> None:
             "benchmarks/agentdojo/src/agentdojo/default_suites/v1_2/travel/injection_tasks.py",
             "benchmarks/agentdojo/src/agentdojo/default_suites/v1/workspace/injection_tasks.py",
             "benchmarks/agentdojo/src/agentdojo/default_suites/v1/slack/injection_tasks.py",
-            "paper1_extension/compositional_tasks.py",
+            "scripts/compositional_tasks.py",
         ],
         "counts_by_category": dict(counts),
         "paired_attack_case_user_task_losses_under_memory": sum(

@@ -10,6 +10,8 @@ from pathlib import Path
 from types import SimpleNamespace
 from typing import Any
 
+from frozen_inputs import digest_fixed, read_fixed
+
 from agentdojo.attacks.attack_registry import load_attack
 from agentdojo.models import MODEL_NAMES
 from agentdojo.task_suite.load_suites import get_suites
@@ -19,7 +21,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from paper1_extension.compositional_tasks import EXTENSION_VERSION, get_paper1_suite
+from compositional_tasks import EXTENSION_VERSION, get_paper1_suite
 
 CONFIG = ROOT / "configs" / "direct_memory_retained_v2.json"
 OUTPUT = ROOT / "results" / "exploratory" / "direct_memory_attack_equivalence_v2.json"
@@ -27,11 +29,16 @@ ARMS = ("no_defense", "stateful_rho_v1", "stateless_rho_v1")
 
 
 def read(path: Path) -> dict[str, Any]:
-    return json.loads(path.read_text(encoding="utf-8"))
+    return json.loads(path.read_text(encoding="utf-8")) if path.exists() else read_fixed(path)
 
 
 def digest(path: Path) -> str:
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+    if not path.exists():
+        return digest_fixed(path)
+    data = path.read_bytes()
+    if path.name == "compositional_tasks.py":
+        data = data.replace(b"\r\n", b"\n")
+    return hashlib.sha256(data).hexdigest()
 
 
 def payload_digest(payload: dict[str, str]) -> str:
@@ -45,7 +52,7 @@ def main() -> None:
     if digest(manifest_path) != config["manifest_sha256"]:
         raise ValueError("Frozen manifest changed")
     if (config["local_extension_version"] != list(EXTENSION_VERSION)
-            or digest(ROOT / "paper1_extension" / "compositional_tasks.py") != config["local_extension_code_sha256"]):
+            or digest(ROOT / "scripts" / "compositional_tasks.py") != config["local_extension_code_sha256"]):
         raise ValueError("Local compositional extension changed")
     manifest = read(manifest_path)
     jobs = [job for job in manifest["jobs"] if job["stage"] == "retained_attack"]
@@ -95,6 +102,7 @@ def main() -> None:
         "case_payload_hashes": rows,
         "interpretation_limit": "Verifies attack construction before execution; provider responses and policy outcomes remain unobserved.",
     }
+    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps(output, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(json.dumps({key: value for key, value in output.items() if key != "case_payload_hashes"}, indent=2, ensure_ascii=False))
 

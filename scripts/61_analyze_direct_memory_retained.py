@@ -16,6 +16,8 @@ from pathlib import Path
 from statistics import mean
 from typing import Any
 
+from frozen_inputs import read_fixed
+
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = ROOT / "configs" / "direct_memory_retained_v2.json"
@@ -29,7 +31,7 @@ BOOTSTRAP_SEED = 20260923
 
 
 def read(path: Path) -> dict[str, Any]:
-    return json.loads(path.read_text(encoding="utf-8"))
+    return json.loads(path.read_text(encoding="utf-8")) if path.exists() else read_fixed(path)
 
 
 def digest(path: Path) -> str:
